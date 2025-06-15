@@ -1,0 +1,24 @@
+{
+  "name": "flint-cool-button",
+  "version": "2.0.0",
+  "description": "A css style of button.",
+  "main": "style.sass",
+  "scripts": {
+    "test": "sass style.sass out.css",
+    "test --watch": "sass --watch style.sass out.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Turbo-Flint/cool-button.git"
+  },
+  "keywords": [
+    "css",
+    "css3"
+  ],
+  "author": "turbo-flint",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Turbo-Flint/cool-button/issues"
+  },
+  "homepage": "https://github.com/Turbo-Flint/cool-button#readme"
+}

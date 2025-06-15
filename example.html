@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="out.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <title>Cobu Shows</title>
+    <style>
+        /* 确保样式与 out.css 兼容，可根据实际情况调整 */
+        div {
+            line-height: 50px;
+        }
+
+        code {
+            border-radius: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Introduction</h3>
+    <p>
+        Cool Button 是一个按钮样式库，它最大的特点是无需输入类名即可快速预定义按钮样式，若需要其他样式，仅需少量类名即可实现。
+    </p>
+    <h3>样式 <span class="tag deep-blue sm">1.0</span></h3>
+    <div> 
+        <!-- 检查类名是否与 out.css 适配，可根据实际情况修改 -->
+        <button class="simple" type="button">Simple</button><br>
+        <button class="border">Border</button><sub>恢复原始样式</sub><br>
+        <button class="square">Square</button><br>
+        <button class="hover">Hover</button><br>
+        <button class="less-padding">Less Padding</button><br>
+        <button class="no-padding">No Padding</button><br>
+        <button class="flat">Flat</button><br>
+        <button class="radius">Radius</button><br>
+        <button class="circle">Circle</button><br>
+        <button class="circle icon"><i class="bi bi-bootstrap"></i></button><sub>图标</sub><br>
+        <button class="sm">Small Size</button><br>
+        <button class="md">Middle Size</button><br>
+        <button class="lg">Large Size</button><br>
+        <button class="block">Block Size</button><br>
+        <button class="full-block">Full Block Size</button>
+
+    </div>
+    <h3>多彩样式 <span class="tag deep-blue sm">1.0</span></h3>
+    <div> 
+        <button class="md radius red">Red</button>
+        <button class="md radius orange">Orange</button>
+        <button class="md radius orange-2">Orange 2</button>
+        <button class="md radius green">Green</button>
+        <button class="md radius green-2">Green 2</button>
+        <button class="md radius green-3">Green 3</button>
+        <button class="md radius blue">Blue</button>
+        <button class="md radius blue-2">Blue 2</button>
+        <button class="md radius sea-blue">Sea-blue</button>
+        <button class="md radius deep-blue">Deep-blue</button>
+        <button class="md radius yellow">Yellow</button>
+        <button class="md radius yellow-2">Yellow 2</button>
+        <button class="md radius purple">Purple</button>
+        <button class="md radius purple-2">Purple 2</button>
+        <button class="md radius brown">Brown</button>
+        <button class="md radius pink">Pink</button>
+    </div>
+    <h3>悬停颜色 <span class="tag orange sm">2.0 Fix</span></h3>
+    <p>悬停后才展示完整颜色。</p>
+    <div> 
+        <button class="hover-red">Red Hover</button>
+        <button class="hover-orange">Orange Hover</button>
+        <button class="hover-orange-2">Orange-2 Hover</button>
+        <button class="hover-green">Green Hover</button>
+        <button class="hover-green-2">Green-2 Hover</button>
+        <button class="hover-green-3">Green-3 Hover</button>
+        <button class="hover-blue">Blue Hover</button><br>
+        <button class="hover-blue-2">Blue-2 Hover</button>
+        <button class="hover-sea-blue">Sea-blue Hover</button>
+        <button class="hover-deep-blue">Deep-blue Hover</button>
+        <button class="hover-yellow">Yellow Hover</button>
+        <button class="hover-yellow-2">Yellow-2 Hover</button>
+        <button class="hover-purple">Purple Hover</button>
+        <button class="hover-purple-2">Purple-2 Hover</button>
+        <button class="hover-brown">Brown Hover</button><br>
+        <button class="hover-pink">Pink Hover</button>
+        <button class="hover" hover="red">自定义颜色</button>
+    </div>
+    <h3>浮动样式 <span class="tag orange sm">2.0</span></h3>
+    <p>移动鼠标到按钮上试试</p>
+    <div> 
+        <button class="float-up deep-blue">Float Up</button>
+        <button class="float-down deep-blue">Float Down</button>
+
+    </div>
+    <h3>交互样式 <span class="tag purple sm">2.0 Beta</span></h3>
+    <p>让按钮就像真的按钮一样。</p>
+    <div>
+        <button class="active deep-blue">Active</button>
+        <button class="mouse-hover deep-blue">Mouse Hover</button>
+        <button class="active-with-hover deep-blue">Active And Hover</button>
+    </div>
+    <h3>阴影样式 <span class="tag orange sm">2.0</span></h3>
+    <p>按钮的周围有一圈模糊的阴影。</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 15px;"> <!-- 通过 padding 增加左右间距，通过 flex 布局和 gap 属性增加按钮间距，可根据实际需求调整数值，添加 flex-wrap: wrap 实现自动换行 -->
+        <button class="shadow-red">Red</button>
+        <button class="shadow-orange">Orange</button>
+        <button class="shadow-orange-2">Orange-2</button>
+        <button class="shadow-green">Green</button>
+        <button class="shadow-green-2">Green-2</button>
+        <button class="shadow-green-3">Green-3</button>
+        <button class="shadow-blue">Blue</button>
+        <button class="shadow-blue-2">Blue-2</button>
+        <button class="shadow-sea-blue">Sea-blue</button>
+        <button class="shadow-deep-blue">Deep-blue</button>
+        <button class="shadow-yellow">Yellow</button>
+        <button class="shadow-yellow-2">Yellow-2</button>
+        <button class="shadow-purple">Purple</button>
+        <button class="shadow-purple-2">Purple-2</button>
+        <button class="shadow-brown">Brown</button>
+        <button class="shadow-pink">Pink</button>
+    </div>
+    <h3>玻璃按钮 <span class="tag purple sm">2.0 Beta</span></h3>
+    <p>优雅的玻璃按钮。</p>
+    <div style="background-image:url('https://images.unsplash.com/photo-1749226697962-950d46f7a0f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8');padding: 10px;height: 100px;">
+        <button class="glass">Glass Button</button>
+        <button class="glass blur-20">Blur 20 Button</button>
+        <button class="glass-pink">With Color</button>
+        <button class="hover-glass">Hover Glass Button</button>
+        <button class="hover-glass-deep-blue">Hover With Color</button>
+    </div>
+    <h3>预设样式</h3>
+    <div>
+        <button class="sm-fat deep-blue">sm-flat</button><br>
+        <button class="tag deep-blue">Tag</button><br>
+        <button class="deep-blue btn-bold">Bold Font</button>
+    </div>
+    <h3>示例</h3>
+    <p>一个圆角且中号的绿色 2 按钮</p>
+    <button class="radius sm green-2">关注</button>
+    <br><br>
+    <footer>
+        <center>Cool Button 由 Turbo Flint 开发<br>Turbo Flint©2023-至今</center>
+    </footer>
+
+    <script src="quicker.js"></script>
+</body>
+
+</html>
