@@ -21,7 +21,12 @@ npm run watch
 
 ### 压缩文件
 
-想要压缩你构建后的`out.css`文件，请执行：
+想要压缩你构建后的`out.css`文件，请先安装`cleancss cli`：
+```bash
+npm install clean-css-cli -g
+```
+
+然后，在需要的时候执行：
 ```bash
 npm run compress
 ```
@@ -30,12 +35,7 @@ npm run compress
 
 ### 自定义生成
 
-如果想要指定生成的文件名，请先安装cleancss：
-```bash
-npm install clean-css-cli -g
-```
-
-然后，在需要的时候执行：
+如果想要自定义生成的文件，请确保Sass安装后，执行：
 ```bash
 sass style.sass out_file_name.css
 ```
