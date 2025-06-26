@@ -5,7 +5,8 @@
   "main": "style.sass",
   "scripts": {
     "build": "sass style.sass out.css && node js/run.js",
-    "watch": "sass --watch style.sass out.css"
+    "watch": "sass --watch style.sass out.css",
+    "compress": "cleancss -o out.mim.css out.css"
   },
   "repository": {
     "type": "git",
