@@ -4,8 +4,8 @@
   "description": "A css style of button.",
   "main": "style.sass",
   "scripts": {
-    "test": "sass style.sass out.css",
-    "test --watch": "sass --watch style.sass out.css"
+    "build": "sass style.sass out.css && node js/run.js",
+    "watch": "sass --watch style.sass out.css"
   },
   "repository": {
     "type": "git",

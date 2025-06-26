@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="out.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/styles/atom-one-dark.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/languages/html.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+    <title>Cool Button 样式库展示</title>
+    <style>
+        /* 确保样式与 out.css 兼容，可根据实际情况调整 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        div {
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
+
+        /* 暗色模式样式 */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333333;
+                color: #ffffff;
+            }
+        }
+
+        /* 按钮容器样式，使按钮布局更美观 */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        h3, h4 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            h3, h4 {
+                color: #ffffff;
+            }
+        }
+
+        code {
+           font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cool Button 样式库</h1>
+    <h3>Introduction</h3>
+    <p>
+        Cool Button 是一个按钮样式库，它最大的特点是无需输入类名即可快速预定义按钮样式，若需要其他样式，仅需少量类名即可实现。
+    </p>
+    <h3>样式 <span class="tag deep-blue sm">1.0</span></h3>
+    <div class="button-container"> 
+        <!-- 检查类名是否与 out.css 适配，可根据实际情况修改 -->
+        <button class="c-btn simple" type="button">Simple</button>
+        <button class="c-btn square">Square</button>
+        <button class="c-btn hover">Hover</button>
+        <button class="c-btn less-padding">Less Padding</button>
+        <button class="c-btn no-padding">No Padding</button>
+        <button class="c-btn flat">Flat</button>
+        <button class="c-btn radius">Radius</button>
+        <button class="c-btn circle">Circle</button>
+        <button class="c-btn circle icon"><i class="bi bi-bootstrap"></i></button>
+        <button class="c-btn sm">Small Size</button>
+        <button class="c-btn md">Middle Size</button>
+        <button class="c-btn lg">Large Size</button>
+        <button class="c-btn block">Block Size</button>
+        <button class="c-btn full-block">Full Block Size</button>
+    </div>
+
+    <pre><code class="language-html">
+        &lt;button class="c-btn simple"&gt;Simple&lt;/button&gt;
+        &lt;button class="c-btn square"&gt;Square&lt;/button&gt;
+        &lt;button class="c-btn hover"&gt;Hover&lt;/button&gt;
+        &lt;button class="c-btn less-padding"&gt;Less Padding&lt;/button&gt;
+        &lt;button class="c-btn no-padding"&gt;No Padding&lt;/button&gt;
+        &lt;button class="c-btn flat"&gt;Flat&lt;/button&gt;
+        &lt;button class="c-btn radius"&gt;Radius&lt;/button&gt;
+        &lt;button class="c-btn circle"&gt;Circle&lt;/button&gt;
+        &lt;button class="c-btn circle icon"&gt;&lt;i class="bi bi-bootstrap"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;button class="c-btn sm"&gt;Small Size&lt;/button&gt;
+        &lt;button class="c-btn md"&gt;Middle Size&lt;/button&gt;
+        &lt;button class="c-btn lg"&gt;Large Size&lt;/button&gt;
+        &lt;button class="c-btn block"&gt;Block Size&lt;/button&gt;
+        &lt;button class="c-btn full-block"&gt;Full Block Size&lt;/button&gt;
+        </code></pre>
+    <h3>多彩样式 <span class="tag deep-blue sm">1.0</span></h3>
+    <div class="button-container"> 
+        <button class="c-btn md radius red">Red</button>
+        <button class="c-btn md radius orange">Orange</button>
+        <button class="c-btn md radius tangerine">Tangerine</button>
+        <button class="c-btn md radius green">Green</button>
+        <button class="c-btn md radius emerald">Emerald</button>
+        <button class="c-btn md radius mint">Mint</button>
+        <button class="c-btn md radius blue">Blue</button>
+        <button class="c-btn md radius ocean-blue">Ocean-blue</button>
+        <button class="c-btn md radius sea-blue">Sea-blue</button>
+        <button class="c-btn md radius deep-blue">Deep-blue</button>
+        <button class="c-btn md radius yellow">Yellow</button>
+        <button class="c-btn md radius gold">Gold</button>
+        <button class="c-btn md radius purple">Purple</button>
+        <button class="c-btn md radius lilac">Lilac</button>
+        <button class="c-btn md radius brown">Brown</button>
+        <button class="c-btn md radius pink">Pink</button>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn md radius red"&gt;Red&lt;/button&gt;
+        &lt;button class="c-btn md radius orange"&gt;Orange&lt;/button&gt;
+        &lt;button class="c-btn md radius tangerine"&gt;Tangerine&lt;/button&gt;
+        &lt;button class="c-btn md radius green"&gt;Green&lt;/button&gt;
+        &lt;button class="c-btn md radius emerald"&gt;Emerald&lt;/button&gt;
+        &lt;button class="c-btn md radius mint"&gt;Mint&lt;/button&gt;
+        &lt;button class="c-btn md radius blue"&gt;Blue&lt;/button&gt;
+        &lt;button class="c-btn md radius ocean-blue"&gt;Ocean-blue&lt;/button&gt;
+        &lt;button class="c-btn md radius sea-blue"&gt;Sea-blue&lt;/button&gt;
+        &lt;button class="c-btn md radius deep-blue"&gt;Deep-blue&lt;/button&gt;
+        &lt;button class="c-btn md radius yellow"&gt;Yellow&lt;/button&gt;
+        &lt;button class="c-btn md radius gold"&gt;Gold&lt;/button&gt;
+        &lt;button class="c-btn md radius purple"&gt;Purple&lt;/button&gt;
+        &lt;button class="c-btn md radius lilac"&gt;Lilac&lt;/button&gt;
+        &lt;button class="c-btn md radius brown"&gt;Brown&lt;/button&gt;
+        &lt;button class="c-btn md radius pink"&gt;Pink&lt;/button&gt;
+        </code></pre>
+    <h4>背景色可以设定透明度</h4>
+    <div class="button-container"> 
+        <button class="c-btn md radius deep-blue-10">Deep-blue-10</button>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn md radius deep-blue-10"&gt;Deep-blue-10&lt;/button&gt;
+        </code></pre>
+    <h3>悬停颜色 <span class="tag orange sm">2.0</span></h3>
+    <p>悬停后才展示完整颜色</p>
+    <div class="button-container"> 
+        <button class="c-btn hover-red">Red Hover</button>
+        <button class="c-btn hover-orange">Orange Hover</button>
+        <button class="c-btn hover-tangerine">Tangerine Hover</button>
+        <button class="c-btn hover-green">Green Hover</button>
+        <button class="c-btn hover-emerald">Emerald Hover</button>
+        <button class="c-btn hover-mint">Mint Hover</button>
+        <button class="c-btn hover-blue">Blue Hover</button>
+        <button class="c-btn hover-ocean-blue">Ocean-blue Hover</button>
+        <button class="c-btn hover-sea-blue">Sea-blue Hover</button>
+        <button class="c-btn hover-deep-blue">Deep-blue Hover</button>
+        <button class="c-btn hover-yellow">Yellow Hover</button>
+        <button class="c-btn hover-gold">Gold Hover</button>
+        <button class="c-btn hover-purple">Purple Hover</button>
+        <button class="c-btn hover-lilac">Lilac Hover</button>
+        <button class="c-btn hover-brown">Brown Hover</button>
+        <button class="c-btn hover-pink">Pink Hover</button>
+        <button class="c-btn hover" hover="red">自定义颜色</button>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn hover-red"&gt;Red Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-orange"&gt;Orange Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tangerine"&gt;Tangerine Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-green"&gt;Green Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-emerald"&gt;Emerald Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-mint"&gt;Mint Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-blue"&gt;Blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-ocean-blue"&gt;Ocean-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-sea-blue"&gt;Sea-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-deep-blue"&gt;Deep-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-yellow"&gt;Yellow Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-gold"&gt;Gold Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-purple"&gt;Purple Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-lilac"&gt;Lilac Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-brown"&gt;Brown Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-pink"&gt;Pink Hover&lt;/button&gt;
+        &lt;button class="c-btn hover" hover="red"&gt;自定义颜色&lt;/button&gt;
+        </code></pre>
+
+    <div> 
+        <h4>背景为空的悬停</h4>
+        <div class="button-container">
+            <button class="c-btn hover-tran-red">Red Hover</button>
+            <button class="c-btn hover-tran-orange">Orange Hover</button>
+            <button class="c-btn hover-tran-tangerine">Tangerine Hover</button>
+            <button class="c-btn hover-tran-green">Green Hover</button>
+            <button class="c-btn hover-tran-emerald">Emerald Hover</button>
+            <button class="c-btn hover-tran-mint">Mint Hover</button>
+            <button class="c-btn hover-tran-blue">Blue Hover</button>
+            <button class="c-btn hover-tran-ocean-blue">Ocean-blue Hover</button>
+            <button class="c-btn hover-tran-sea-blue">Sea-blue Hover</button>
+            <button class="c-btn hover-tran-deep-blue">Deep-blue Hover</button>
+            <button class="c-btn hover-tran-yellow">Yellow Hover</button>
+            <button class="c-btn hover-tran-gold">Gold Hover</button>
+            <button class="c-btn hover-tran-purple">Purple Hover</button>
+            <button class="c-btn hover-tran-lilac">Lilac Hover</button>
+            <button class="c-btn hover-tran-brown">Brown Hover</button>
+            <button class="c-btn hover-tran-pink">Pink Hover</button>
+            <button class="c-btn hover-tran-red">自定义颜色</button>
+        </div>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn hover-tran-red"&gt;Red Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-orange"&gt;Orange Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-tangerine"&gt;Tangerine Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-green"&gt;Green Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-emerald"&gt;Emerald Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-mint"&gt;Mint Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-blue"&gt;Blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-ocean-blue"&gt;Ocean-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-sea-blue"&gt;Sea-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-deep-blue"&gt;Deep-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-yellow"&gt;Yellow Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-gold"&gt;Gold Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-purple"&gt;Purple Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-lilac"&gt;Lilac Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-brown"&gt;Brown Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-pink"&gt;Pink Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-red"&gt;自定义颜色&lt;/button&gt;
+        </code></pre>
+
+    <div> 
+        <h4>初始文本为白色的悬停</h4>
+        <div class="button-container">
+            <button class="c-btn hover-tran-red text-white">Red Hover</button>
+            <button class="c-btn hover-tran-orange text-white">Orange Hover</button>
+            <button class="c-btn hover-tran-tangerine text-white">Tangerine Hover</button>
+            <button class="c-btn hover-tran-green text-white">Green Hover</button>
+            <button class="c-btn hover-tran-emerald text-white">Emerald Hover</button>
+            <button class="c-btn hover-tran-mint text-white">Mint Hover</button>
+            <button class="c-btn hover-tran-blue text-white">Blue Hover</button>
+            <button class="c-btn hover-tran-ocean-blue text-white">Ocean-blue Hover</button>
+            <button class="c-btn hover-tran-sea-blue text-white">Sea-blue Hover</button>
+            <button class="c-btn hover-tran-deep-blue text-white">Deep-blue Hover</button>
+            <button class="c-btn hover-tran-yellow text-white">Yellow Hover</button>
+            <button class="c-btn hover-tran-gold text-white">Gold Hover</button>
+            <button class="c-btn hover-tran-purple text-white">Purple Hover</button>
+            <button class="c-btn hover-tran-lilac text-white">Lilac Hover</button>
+            <button class="c-btn hover-tran-brown text-white">Brown Hover</button>
+            <button class="c-btn hover-tran-pink text-white">Pink Hover</button>
+            <button class="c-btn hover-tran-red text-white">自定义颜色</button>
+        </div>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn hover-tran-red text-white"&gt;Red Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-orange text-white"&gt;Orange Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-tangerine text-white"&gt;Tangerine Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-green text-white"&gt;Green Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-emerald text-white"&gt;Emerald Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-mint text-white"&gt;Mint Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-blue text-white"&gt;Blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-ocean-blue text-white"&gt;Ocean-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-sea-blue text-white"&gt;Sea-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-deep-blue text-white"&gt;Deep-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-yellow text-white"&gt;Yellow Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-gold text-white"&gt;Gold Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-purple text-white"&gt;Purple Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-lilac text-white"&gt;Lilac Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-brown text-white"&gt;Brown Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-pink text-white"&gt;Pink Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-tran-red text-white"&gt;自定义颜色&lt;/button&gt;
+        </code></pre>
+    <h3>悬停边框 <span class="tag orange sm">2.0 Beta2</span></h3>
+    <p>悬停后展示边框颜色</p>
+    <div class="button-container">
+        <button class="c-btn hover-border-red">Red Hover</button>
+        <button class="c-btn hover-border-orange">Orange Hover</button>
+        <button class="c-btn hover-border-tangerine">Tangerine Hover</button>
+        <button class="c-btn hover-border-green">Green Hover</button>
+        <button class="c-btn hover-border-emerald">Emerald Hover</button>
+        <button class="c-btn hover-border-mint">Mint Hover</button>
+        <button class="c-btn hover-border-blue">Blue Hover</button>
+        <button class="c-btn hover-border-ocean-blue">Ocean-blue Hover</button>
+        <button class="c-btn hover-border-sea-blue">Sea-blue Hover</button>
+        <button class="c-btn hover-border-deep-blue">Deep-blue Hover</button>
+        <button class="c-btn hover-border-yellow">Yellow Hover</button>
+        <button class="c-btn hover-border-gold">Gold Hover</button>
+        <button class="c-btn hover-border-purple">Purple Hover</button>
+        <button class="c-btn hover-border-lilac">Lilac Hover</button>
+        <button class="c-btn hover-border-brown">Brown Hover</button>
+        <button class="c-btn hover-border-pink">Pink Hover</button>
+        <button class="c-btn hover-border-red">自定义颜色</button>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn hover-border-red"&gt;Red Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-orange"&gt;Orange Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tangerine"&gt;Tangerine Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-green"&gt;Green Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-emerald"&gt;Emerald Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-mint"&gt;Mint Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-blue"&gt;Blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-ocean-blue"&gt;Ocean-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-sea-blue"&gt;Sea-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-deep-blue"&gt;Deep-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-yellow"&gt;Yellow Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-gold"&gt;Gold Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-purple"&gt;Purple Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-lilac"&gt;Lilac Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-brown"&gt;Brown Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-pink"&gt;Pink Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-red"&gt;自定义颜色&lt;/button&gt;
+        </code></pre>
+
+    <h4>透明背景的悬停边框</h4>
+    <div class="button-container">
+        <button class="c-btn hover-border-tran-red">Red Hover</button>
+        <button class="c-btn hover-border-tran-orange">Orange Hover</button>
+        <button class="c-btn hover-border-tran-tangerine">Tangerine Hover</button>
+        <button class="c-btn hover-border-tran-green">Green Hover</button>
+        <button class="c-btn hover-border-tran-emerald">Emerald Hover</button>
+        <button class="c-btn hover-border-tran-mint">Mint Hover</button>
+        <button class="c-btn hover-border-tran-blue">Blue Hover</button>
+        <button class="c-btn hover-border-tran-ocean-blue">Ocean-blue Hover</button>
+        <button class="c-btn hover-border-tran-sea-blue">Sea-blue Hover</button>
+        <button class="c-btn hover-border-tran-deep-blue">Deep-blue Hover</button>
+        <button class="c-btn hover-border-tran-yellow">Yellow Hover</button>
+        <button class="c-btn hover-border-tran-gold">Gold Hover</button>
+        <button class="c-btn hover-border-tran-purple">Purple Hover</button>
+        <button class="c-btn hover-border-tran-lilac">Lilac Hover</button>
+        <button class="c-btn hover-border-tran-brown">Brown Hover</button>
+        <button class="c-btn hover-border-tran-pink">Pink Hover</button>
+        <button class="c-btn hover-border-tran-red">自定义颜色</button>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn hover-border-tran-red"&gt;Red Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-orange"&gt;Orange Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-tangerine"&gt;Tangerine Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-green"&gt;Green Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-emerald"&gt;Emerald Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-mint"&gt;Mint Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-blue"&gt;Blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-ocean-blue"&gt;Ocean-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-sea-blue"&gt;Sea-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-deep-blue"&gt;Deep-blue Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-yellow"&gt;Yellow Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-gold"&gt;Gold Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-purple"&gt;Purple Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-lilac"&gt;Lilac Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-brown"&gt;Brown Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-pink"&gt;Pink Hover&lt;/button&gt;
+        &lt;button class="c-btn hover-border-tran-red"&gt;自定义颜色&lt;/button&gt;
+        </code></pre>
+
+    <h3>浮动样式 <span class="tag orange sm">2.0</span></h3>
+    <p>移动鼠标到按钮上试试</p>
+    <div class="button-container"> 
+        <button class="c-btn float-up deep-blue">Float Up</button>
+        <button class="c-btn float-down deep-blue">Float Down</button>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn float-up deep-blue"&gt;Float Up&lt;/button&gt;
+        &lt;button class="c-btn float-down deep-blue"&gt;Float Down&lt;/button&gt;
+        </code></pre>
+    <h3>交互样式 <span class="tag purple sm">2.0 Beta</span></h3>
+    <p>让按钮就像真的按钮一样。</p>
+    <div class="button-container">
+        <button class="c-btn active deep-blue">Active</button>
+        <button class="c-btn mouse-hover deep-blue">Mouse Hover</button>
+        <button class="c-btn active-with-hover deep-blue">Active And Hover</button>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn active deep-blue"&gt;Active&lt;/button&gt;
+        &lt;button class="c-btn mouse-hover deep-blue"&gt;Mouse Hover&lt;/button&gt;
+        &lt;button class="c-btn active-with-hover deep-blue"&gt;Active And Hover&lt;/button&gt;
+        </code></pre>
+    <h3>阴影样式 <span class="tag orange sm">2.0</span></h3>
+    <p>按钮的周围有一圈模糊的阴影。</p>
+    <div class="button-container">
+        <button class="c-btn shadow-red">Red</button>
+        <button class="c-btn shadow-orange">Orange</button>
+        <button class="c-btn shadow-tangerine">Tangerine</button>
+        <button class="c-btn shadow-green">Green</button>
+        <button class="c-btn shadow-emerald">Emerald</button>
+        <button class="c-btn shadow-mint">Mint</button>
+        <button class="c-btn shadow-blue">Blue</button>
+        <button class="c-btn shadow-ocean-blue">Ocean-blue</button>
+        <button class="c-btn shadow-sea-blue">Sea-blue</button>
+        <button class="c-btn shadow-deep-blue">Deep-blue</button>
+        <button class="c-btn shadow-yellow">Yellow</button>
+        <button class="c-btn shadow-gold">Gold</button>
+        <button class="c-btn shadow-purple">Purple</button>
+        <button class="c-btn shadow-lilac">Lilac</button>
+        <button class="c-btn shadow-brown">Brown</button>
+        <button class="c-btn shadow-pink">Pink</button>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn shadow-red"&gt;Red&lt;/button&gt;
+        &lt;button class="c-btn shadow-orange"&gt;Orange&lt;/button&gt;
+        &lt;button class="c-btn shadow-tangerine"&gt;Tangerine&lt;/button&gt;
+        &lt;button class="c-btn shadow-green"&gt;Green&lt;/button&gt;
+        &lt;button class="c-btn shadow-emerald"&gt;Emerald&lt;/button&gt;
+        &lt;button class="c-btn shadow-mint"&gt;Mint&lt;/button&gt;
+        &lt;button class="c-btn shadow-blue"&gt;Blue&lt;/button&gt;
+        &lt;button class="c-btn shadow-ocean-blue"&gt;Ocean-blue&lt;/button&gt;
+        &lt;button class="c-btn shadow-sea-blue"&gt;Sea-blue&lt;/button&gt;
+        &lt;button class="c-btn shadow-deep-blue"&gt;Deep-blue&lt;/button&gt;
+        &lt;button class="c-btn shadow-yellow"&gt;Yellow&lt;/button&gt;
+        &lt;button class="c-btn shadow-gold"&gt;Gold&lt;/button&gt;
+        &lt;button class="c-btn shadow-purple"&gt;Purple&lt;/button&gt;
+        &lt;button class="c-btn shadow-lilac"&gt;Lilac&lt;/button&gt;
+        &lt;button class="c-btn shadow-brown"&gt;Brown&lt;/button&gt;
+        &lt;button class="c-btn shadow-pink"&gt;Pink&lt;/button&gt;
+        </code></pre>
+    <h3>玻璃按钮 <span class="tag purple sm">2.0 Beta</span></h3>
+    <p>优雅的玻璃按钮。</p>
+    <div style="background-image:url('https://images.unsplash.com/photo-1749226697962-950d46f7a0f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8');padding: 20px;height: auto; border-radius: 8px; margin-bottom: 30px;">
+        <div class="button-container">
+            <button class="c-btn glass">Glass Button</button>
+            <button class="c-btn glass blur-20">Blur 20 Button</button>
+            <button class="c-btn glass-pink">With Color</button>
+            <button class="c-btn hover-glass">Hover Glass Button</button>
+            <button class="c-btn hover-glass-deep-blue">Hover With Color</button>
+        </div>
+    </div>
+    <pre><code class="language-html">
+                &lt;button class="c-btn glass"&gt;Glass Button&lt;/button&gt;
+                &lt;button class="c-btn glass blur-20"&gt;Blur 20 Button&lt;/button&gt;
+                &lt;button class="c-btn glass-pink"&gt;With Color&lt;/button&gt;
+                &lt;button class="c-btn hover-glass"&gt;Hover Glass Button&lt;/button&gt;
+                &lt;button class="c-btn hover-glass-deep-blue"&gt;Hover With Color&lt;/button&gt;
+        </code></pre>
+    <h3>预设样式</h3>
+    <div class="button-container">
+        <button class="c-btn sm-fat deep-blue">sm-flat</button>
+        <button class="c-btn tag deep-blue">Tag</button>
+        <button class="c-btn deep-blue btn-bold">Bold Font</button>
+    </div>
+    <pre><code class="language-html">
+        &lt;button class="c-btn sm-fat deep-blue"&gt;sm-flat&lt;/button&gt;
+        &lt;button class="c-btn tag deep-blue"&gt;Tag&lt;/button&gt;
+        &lt;button class="c-btn deep-blue btn-bold"&gt;Bold Font&lt;/button&gt;
+        </code></pre>
+    <h3>示例</h3>
+    <p>一个圆角且中号的祖母绿按钮</p>
+    <button class="c-btn radius sm hover-tran-emerald-10">关注</button>
+    <pre><code class="language-html">
+        &lt;button class="c-btn radius sm emerald"&gt;关注&lt;/button&gt;
+        </code></pre>
+    <br><br>
+    <footer style="margin-top: 50px; text-align: center; padding: 20px; border-top: 1px solid #eee;">
+        <p>Cool Button 由 Turbo Flint 开发<br>Turbo Flint©2023-至今</p>
+    </footer>
+
+
+    <script src="quicker.js"></script>
+
+
+</body>
+
+</html>

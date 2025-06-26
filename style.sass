@@ -1,40 +1,187 @@
 /* v2.0 重构版 2025/6/10 */
 // 修正颜色值，RGB 范围是 0-255
-$background: #b6b6b6
-$red: rgb(222, 49, 49)
-$blue: rgb(36, 134, 185)
-$blue-2: rgb(14, 176, 201)
-$deep-blue: rgb(4, 87, 251)
-$sea-blue: rgb(1, 112, 227)
-$orange: rgb(239, 99, 43)
-$orange-2: rgb(250, 126, 35)
-$green: rgb(36, 128, 103)
-$green-2: rgb(34, 148, 83)
-$green-3: rgb(32, 161, 98)
-$yellow: rgb(251, 205, 49)
-$yellow-2: rgb(252, 195, 7)
-$purple: rgb(126, 22, 113)
-$purple-2: rgb(128, 109, 158)
-$brown: rgb(145, 128, 114)
-$pink: rgb(232, 122, 144)
+@use "sass:color"
 
-// 基础按钮样式
-button
-    background: $background
+$background: #000000
+$red: rgb(222, 49, 49)
+$red-10: rgba(222, 49, 49, 0.1)
+$red-20: rgba(222, 49, 49, 0.2)
+$red-30: rgba(222, 49, 49, 0.3)
+$red-40: rgba(222, 49, 49, 0.4)
+$red-50: rgba(222, 49, 49, 0.5)
+$red-60: rgba(222, 49, 49, 0.6)
+$red-70: rgba(222, 49, 49, 0.7)
+$red-80: rgba(222, 49, 49, 0.8)
+$red-90: rgba(222, 49, 49, 0.9)
+$blue: rgb(36, 134, 185)
+$blue-10: rgba(36, 134, 185, 0.1)
+$blue-20: rgba(36, 134, 185, 0.2)
+$blue-30: rgba(36, 134, 185, 0.3)
+$blue-40: rgba(36, 134, 185, 0.4)
+$blue-50: rgba(36, 134, 185, 0.5)
+$blue-60: rgba(36, 134, 185, 0.6)
+$blue-70: rgba(36, 134, 185, 0.7)
+$blue-80: rgba(36, 134, 185, 0.8)
+$blue-90: rgba(36, 134, 185, 0.9)
+$ocean-blue: rgb(14, 176, 201)  // 原 $blue-2，更名为 ocean-blue（海洋蓝）
+$ocean-blue-10: rgba(14, 176, 201, 0.1)
+$ocean-blue-20: rgba(14, 176, 201, 0.2)
+$ocean-blue-30: rgba(14, 176, 201, 0.3)
+$ocean-blue-40: rgba(14, 176, 201, 0.4)
+$ocean-blue-50: rgba(14, 176, 201, 0.5)
+$ocean-blue-60: rgba(14, 176, 201, 0.6)
+$ocean-blue-70: rgba(14, 176, 201, 0.7)
+$ocean-blue-80: rgba(14, 176, 201, 0.8)
+$ocean-blue-90: rgba(14, 176, 201, 0.9)
+$deep-blue: rgb(4, 87, 251)
+$deep-blue-10: rgba(4, 87, 251, 0.1)
+$deep-blue-20: rgba(4, 87, 251, 0.2)
+$deep-blue-30: rgba(4, 87, 251, 0.3)
+$deep-blue-40: rgba(4, 87, 251, 0.4)
+$deep-blue-50: rgba(4, 87, 251, 0.5)
+$deep-blue-60: rgba(4, 87, 251, 0.6)
+$deep-blue-70: rgba(4, 87, 251, 0.7)
+$deep-blue-80: rgba(4, 87, 251, 0.8)
+$deep-blue-90: rgba(4, 87, 251, 0.9)
+$sea-blue: rgb(1, 112, 227)
+$sea-blue-10: rgba(1, 112, 227, 0.1)
+$sea-blue-20: rgba(1, 112, 227, 0.2)
+$sea-blue-30: rgba(1, 112, 227, 0.3)
+$sea-blue-40: rgba(1, 112, 227, 0.4)
+$sea-blue-50: rgba(1, 112, 227, 0.5)
+$sea-blue-60: rgba(1, 112, 227, 0.6)
+$sea-blue-70: rgba(1, 112, 227, 0.7)
+$sea-blue-80: rgba(1, 112, 227, 0.8)
+$sea-blue-90: rgba(1, 112, 227, 0.9)
+$orange: rgb(239, 99, 43)
+$orange-10: rgba(239, 99, 43, 0.1)
+$orange-20: rgba(239, 99, 43, 0.2)
+$orange-30: rgba(239, 99, 43, 0.3)
+$orange-40: rgba(239, 99, 43, 0.4)
+$orange-50: rgba(239, 99, 43, 0.5)
+$orange-60: rgba(239, 99, 43, 0.6)
+$orange-70: rgba(239, 99, 43, 0.7)
+$orange-80: rgba(239, 99, 43, 0.8)
+$orange-90: rgba(239, 99, 43, 0.9)
+$tangerine: rgb(250, 126, 35)  // 原 $orange-2，更名为 tangerine（橘橙色）
+$tangerine-10: rgba(250, 126, 35, 0.1)
+$tangerine-20: rgba(250, 126, 35, 0.2)
+$tangerine-30: rgba(250, 126, 35, 0.3)
+$tangerine-40: rgba(250, 126, 35, 0.4)
+$tangerine-50: rgba(250, 126, 35, 0.5)
+$tangerine-60: rgba(250, 126, 35, 0.6)
+$tangerine-70: rgba(250, 126, 35, 0.7)
+$tangerine-80: rgba(250, 126, 35, 0.8)
+$tangerine-90: rgba(250, 126, 35, 0.9)
+$green: rgb(36, 128, 103)
+$green-10: rgba(36, 128, 103, 0.1)
+$green-20: rgba(36, 128, 103, 0.2)
+$green-30: rgba(36, 128, 103, 0.3)
+$green-40: rgba(36, 128, 103, 0.4)
+$green-50: rgba(36, 128, 103, 0.5)
+$green-60: rgba(36, 128, 103, 0.6)
+$green-70: rgba(36, 128, 103, 0.7)
+$green-80: rgba(36, 128, 103, 0.8)
+$green-90: rgba(36, 128, 103, 0.9)
+$emerald: rgb(34, 148, 83)  // 原 $green-2，更名为 emerald（祖母绿）
+$emerald-10: rgba(34, 148, 83, 0.1)
+$emerald-20: rgba(34, 148, 83, 0.2)
+$emerald-30: rgba(34, 148, 83, 0.3)
+$emerald-40: rgba(34, 148, 83, 0.4)
+$emerald-50: rgba(34, 148, 83, 0.5)
+$emerald-60: rgba(34, 148, 83, 0.6)
+$emerald-70: rgba(34, 148, 83, 0.7)
+$emerald-80: rgba(34, 148, 83, 0.8)
+$emerald-90: rgba(34, 148, 83, 0.9)
+$mint: rgb(32, 161, 98)  // 原 $green-3，更名为 mint（薄荷绿）
+$mint-10: rgba(32, 161, 98, 0.1)
+$mint-20: rgba(32, 161, 98, 0.2)
+$mint-30: rgba(32, 161, 98, 0.3)
+$mint-40: rgba(32, 161, 98, 0.4)
+$mint-50: rgba(32, 161, 98, 0.5)
+$mint-60: rgba(32, 161, 98, 0.6)
+$mint-70: rgba(32, 161, 98, 0.7)
+$mint-80: rgba(32, 161, 98, 0.8)
+$mint-90: rgba(32, 161, 98, 0.9)
+$yellow: rgb(251, 205, 49)
+$yellow-10: rgba(251, 205, 49, 0.1)
+$yellow-20: rgba(251, 205, 49, 0.2)
+$yellow-30: rgba(251, 205, 49, 0.3)
+$yellow-40: rgba(251, 205, 49, 0.4)
+$yellow-50: rgba(251, 205, 49, 0.5)
+$yellow-60: rgba(251, 205, 49, 0.6)
+$yellow-70: rgba(251, 205, 49, 0.7)
+$yellow-80: rgba(251, 205, 49, 0.8)
+$yellow-90: rgba(251, 205, 49, 0.9)
+$gold: rgb(252, 195, 7)  // 原 $yellow-2，更名为 gold（金色）
+$gold-10: rgba(252, 195, 7, 0.1)
+$gold-20: rgba(252, 195, 7, 0.2)
+$gold-30: rgba(252, 195, 7, 0.3)
+$gold-40: rgba(252, 195, 7, 0.4)
+$gold-50: rgba(252, 195, 7, 0.5)
+$gold-60: rgba(252, 195, 7, 0.6)
+$gold-70: rgba(252, 195, 7, 0.7)
+$gold-80: rgba(252, 195, 7, 0.8)
+$gold-90: rgba(252, 195, 7, 0.9)
+$purple: rgb(126, 22, 113)
+$purple-10: rgba(126, 22, 113, 0.1)
+$purple-20: rgba(126, 22, 113, 0.2)
+$purple-30: rgba(126, 22, 113, 0.3)
+$purple-40: rgba(126, 22, 113, 0.4)
+$purple-50: rgba(126, 22, 113, 0.5)
+$purple-60: rgba(126, 22, 113, 0.6)
+$purple-70: rgba(126, 22, 113, 0.7)
+$purple-80: rgba(126, 22, 113, 0.8)
+$purple-90: rgba(126, 22, 113, 0.9)
+$lilac: rgb(128, 109, 158)  // 原 $purple-2，更名为 lilac（丁香紫）
+$lilac-10: rgba(128, 109, 158, 0.1)
+$lilac-20: rgba(128, 109, 158, 0.2)
+$lilac-30: rgba(128, 109, 158, 0.3)
+$lilac-40: rgba(128, 109, 158, 0.4)
+$lilac-50: rgba(128, 109, 158, 0.5)
+$lilac-60: rgba(128, 109, 158, 0.6)
+$lilac-70: rgba(128, 109, 158, 0.7)
+$lilac-80: rgba(128, 109, 158, 0.8)
+$lilac-90: rgba(128, 109, 158, 0.9)
+$brown: rgb(145, 128, 114)
+$brown-10: rgba(145, 128, 114, 0.1)
+$brown-20: rgba(145, 128, 114, 0.2)
+$brown-30: rgba(145, 128, 114, 0.3)
+$brown-40: rgba(145, 128, 114, 0.4)
+$brown-50: rgba(145, 128, 114, 0.5)
+$brown-60: rgba(145, 128, 114, 0.6)
+$brown-70: rgba(145, 128, 114, 0.7)
+$brown-80: rgba(145, 128, 114, 0.8)
+$brown-90: rgba(145, 128, 114, 0.9)
+$pink: rgb(232, 122, 144)
+$pink-10: rgba(232, 122, 144, 0.1)
+$pink-20: rgba(232, 122, 144, 0.2)
+$pink-30: rgba(232, 122, 144, 0.3)
+$pink-40: rgba(232, 122, 144, 0.4)
+$pink-50: rgba(232, 122, 144, 0.5)
+$pink-60: rgba(232, 122, 144, 0.6)
+$pink-70: rgba(232, 122, 144, 0.7)
+$pink-80: rgba(232, 122, 144, 0.8)
+$pink-90: rgba(232, 122, 144, 0.9)
+
+.c-btn
     outline: none
     border: none
     padding: 10px 40px
     font-size: 15px
     text-align: center
-    border-radius: 5px
+    @media (prefers-color-scheme: light)
+        background: $background
+        color: white
+    @media (prefers-color-scheme: dark)
+        background: white
 
+.text-white
+    color: white !important
 .btn-bold
     font-weight: bold
-
 .border-bold
     border-width: 10px
-
-// 边框半径相关类
 .square
     border-radius: 0px
 .radius
@@ -44,8 +191,6 @@ button
     border-radius: 100px
     font-size: 20px
     text-align: center
-
-// 内边距相关类
 .less-padding
     padding: 10px
 .no-padding
@@ -58,7 +203,6 @@ button
 .icon
     padding: 10px 12px 8px 12px
 
-// 尺寸相关类
 .sm
     padding: 6px 30px
     font-size: 14px
@@ -83,7 +227,6 @@ button
     cursor: pointer
     text-decoration: none
     color: white
-
 .hover-glass
     background: rgba(255, 255, 255, 0.15)
     backdrop-filter: blur(10px)
@@ -95,23 +238,20 @@ button
     text-decoration: none
     color: white
     &:hover
-     background: rgba(255, 255, 255, 0.15)
-     transform: scale(1.05)
-     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25)
+        background: rgba(255, 255, 255, 0.15)
+        transform: scale(1.05)
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25)
     &:active
-     transform: scale(0.96)
-     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2)
-
+        transform: scale(0.96)
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2)
 .active
     transition: transform 0.3s ease
     &:active
         transform: scale(0.94)
-
 .mouse-hover
-     transition: transform 0.3s ease
-     &:hover
-         transform: scale(1.05)
-
+    transition: transform 0.3s ease
+    &:hover
+        transform: scale(1.05)
 .active-with-hover
     transition: transform 0.3s ease
     &:hover
@@ -119,38 +259,180 @@ button
     &:active
         transform: scale(0.95)
 
-// 定义颜色映射，方便复用，包含红色
 $color-map: (
-    red: $red,
-    orange: $orange,
-    orange-2: $orange-2,
-    green: $green,
-    green-2: $green-2,
-    green-3: $green-3,
-    blue: $blue,
-    blue-2: $blue-2,
-    deep-blue: $deep-blue,
-    sea-blue: $sea-blue,
-    yellow: $yellow,
-    yellow-2: $yellow-2,
-    purple: $purple,
-    purple-2: $purple-2,
-    brown: $brown,
-    pink: $pink
+        red: $red,
+        red-10: $red-10,
+        red-20: $red-20,
+        red-30: $red-30,
+        red-40: $red-40,
+        red-50: $red-50,
+        red-60: $red-60,
+        red-70: $red-70,
+        red-80: $red-80,
+        red-90: $red-90,
+        orange: $orange,
+        orange-10: $orange-10,
+        orange-20: $orange-20,
+        orange-30: $orange-30,
+        orange-40: $orange-40,
+        orange-50: $orange-50,
+        orange-60: $orange-60,
+        orange-70: $orange-70,
+        orange-80: $orange-80,
+        orange-90: $orange-90,
+        tangerine: $tangerine,
+        tangerine-10: $tangerine-10,
+        tangerine-20: $tangerine-20,
+        tangerine-30: $tangerine-30,
+        tangerine-40: $tangerine-40,
+        tangerine-50: $tangerine-50,
+        tangerine-60: $tangerine-60,
+        tangerine-70: $tangerine-70,
+        tangerine-80: $tangerine-80,
+        tangerine-90: $tangerine-90,
+        green: $green,
+        green-10: $green-10,
+        green-20: $green-20,
+        green-30: $green-30,
+        green-40: $green-40,
+        green-50: $green-50,
+        green-60: $green-60,
+        green-70: $green-70,
+        green-80: $green-80,
+        green-90: $green-90,
+        emerald: $emerald,
+        emerald-10: $emerald-10,
+        emerald-20: $emerald-20,
+        emerald-30: $emerald-30,
+        emerald-40: $emerald-40,
+        emerald-50: $emerald-50,
+        emerald-60: $emerald-60,
+        emerald-70: $emerald-70,
+        emerald-80: $emerald-80,
+        emerald-90: $emerald-90,
+        mint: $mint,
+        mint-10: $mint-10,
+        mint-20: $mint-20,
+        mint-30: $mint-30,
+        mint-40: $mint-40,
+        mint-50: $mint-50,
+        mint-60: $mint-60,
+        mint-70: $mint-70,
+        mint-80: $mint-80,
+        mint-90: $mint-90,
+        blue: $blue,
+        blue-10: $blue-10,
+        blue-20: $blue-20,
+        blue-30: $blue-30,
+        blue-40: $blue-40,
+        blue-50: $blue-50,
+        blue-60: $blue-60,
+        blue-70: $blue-70,
+        blue-80: $blue-80,
+        blue-90: $blue-90,
+        ocean-blue: $ocean-blue,
+        ocean-blue-10: $ocean-blue-10,
+        ocean-blue-20: $ocean-blue-20,
+        ocean-blue-30: $ocean-blue-30,
+        ocean-blue-40: $ocean-blue-40,
+        ocean-blue-50: $ocean-blue-50,
+        ocean-blue-60: $ocean-blue-60,
+        ocean-blue-70: $ocean-blue-70,
+        ocean-blue-80: $ocean-blue-80,
+        ocean-blue-90: $ocean-blue-90,
+        deep-blue: $deep-blue,
+        deep-blue-10: $deep-blue-10,
+        deep-blue-20: $deep-blue-20,
+        deep-blue-30: $deep-blue-30,
+        deep-blue-40: $deep-blue-40,
+        deep-blue-50: $deep-blue-50,
+        deep-blue-60: $deep-blue-60,
+        deep-blue-70: $deep-blue-70,
+        deep-blue-80: $deep-blue-80,
+        deep-blue-90: $deep-blue-90,
+        sea-blue: $sea-blue,
+        sea-blue-10: $sea-blue-10,
+        sea-blue-20: $sea-blue-20,
+        sea-blue-30: $sea-blue-30,
+        sea-blue-40: $sea-blue-40,
+        sea-blue-50: $sea-blue-50,
+        sea-blue-60: $sea-blue-60,
+        sea-blue-70: $sea-blue-70,
+        sea-blue-80: $sea-blue-80,
+        sea-blue-90: $sea-blue-90,
+        yellow: $yellow,
+        yellow-10: $yellow-10,
+        yellow-20: $yellow-20,
+        yellow-30: $yellow-30,
+        yellow-40: $yellow-40,
+        yellow-50: $yellow-50,
+        yellow-60: $yellow-60,
+        yellow-70: $yellow-70,
+        yellow-80: $yellow-80,
+        yellow-90: $yellow-90,
+        gold: $gold,
+        gold-10: $gold-10,
+        gold-20: $gold-20,
+        gold-30: $gold-30,
+        gold-40: $gold-40,
+        gold-50: $gold-50,
+        gold-60: $gold-60,
+        gold-70: $gold-70,
+        gold-80: $gold-80,
+        gold-90: $gold-90,
+        purple: $purple,
+        purple-10: $purple-10,
+        purple-20: $purple-20,
+        purple-30: $purple-30,
+        purple-40: $purple-40,
+        purple-50: $purple-50,
+        purple-60: $purple-60,
+        purple-70: $purple-70,
+        purple-80: $purple-80,
+        purple-90: $purple-90,
+        lilac: $lilac,
+        lilac-10: $lilac-10,
+        lilac-20: $lilac-20,
+        lilac-30: $lilac-30,
+        lilac-40: $lilac-40,
+        lilac-50: $lilac-50,
+        lilac-60: $lilac-60,
+        lilac-70: $lilac-70,
+        lilac-80: $lilac-80,
+        lilac-90: $lilac-90,
+        brown: $brown,
+        brown-10: $brown-10,
+        brown-20: $brown-20,
+        brown-30: $brown-30,
+        brown-40: $brown-40,
+        brown-50: $brown-50,
+        brown-60: $brown-60,
+        brown-70: $brown-70,
+        brown-80: $brown-80,
+        brown-90: $brown-90,
+        pink: $pink,
+        pink-10: $pink-10,
+        pink-20: $pink-20,
+        pink-30: $pink-30,
+        pink-40: $pink-40,
+        pink-50: $pink-50,
+        pink-60: $pink-60,
+        pink-70: $pink-70,
+        pink-80: $pink-80,
+        pink-90: $pink-90
 )
 
-// 循环生成玻璃质感颜色类
-@each $name, $color in $color-map
-    .glass-#{$name}
-        background: rgba(red($color), green($color), blue($color), 0.15)
+@each $color-name, $color in $color-map
+    .glass-#{"" + $color-name}
+        background: rgba(color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb), 0.15)
         backdrop-filter: blur(10px)
         -webkit-backdrop-filter: blur(10px)
-        border: 1px solid rgba(red($color), green($color), blue($color), 0.2)
-        box-shadow: 0 8px 32px rgba(red($color), green($color), blue($color), 0.2)
+        border: 1px solid rgba(color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb), 0.2)
+        box-shadow: 0 8px 32px rgba(color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb), 0.2)
         transition: all 0.3s ease
         cursor: pointer
         text-decoration: none
-        color: if($name == 'yellow', black, white)
+        color: if($color-name == 'yellow', black, white)
 
 @for $i from 5 through 20
     .blur-#{$i}
@@ -159,32 +441,11 @@ $color-map: (
         background: rgba(255, 255, 255, 0.3)
         color: white
 
-// 定义颜色映射，方便复用，添加红色
-$color-map: (
-    red: $red,
-    orange: $orange,
-    orange-2: $orange-2,
-    green: $green,
-    green-2: $green-2,
-    green-3: $green-3,
-    blue: $blue,
-    blue-2: $blue-2,
-    deep-blue: $deep-blue,
-    sea-blue: $sea-blue,
-    yellow: $yellow,
-    yellow-2: $yellow-2,
-    purple: $purple,
-    purple-2: $purple-2,
-    brown: $brown,
-    pink: $pink
-)
-// 循环生成实心颜色类
-@each $name, $color in $color-map
-    .#{$name}
+@each $color-name, $color in $color-map
+    .#{"" + $color-name}
         background: $color
-        color: if($name == 'yellow', black, white)
+        color: if($color-name == 'yellow', black, white)
 
-// 定义 hover 基础样式
 .hover
     background: white
     border: 1px solid black
@@ -192,22 +453,32 @@ $color-map: (
     &:hover
         background: black
         color: white
+    @media (prefers-color-scheme: light)
+        color: black
 
-// 循环生成带颜色的 hover 类
-@each $name, $color in $color-map
-    .hover-#{$name}
+@each $color-name, $color in $color-map
+    .hover-#{"" + $color-name}
         color: $color
         border: 1px solid $color
         transition: all 0.2s
         background: white
         &:hover
             background: $color
-            color: if($name == 'yellow', black, white)
+            color: if($color-name == 'yellow', black, white)
             border: 1px solid $color
 
-// 循环生成按钮背景阴影，四周都有且模糊，阴影颜色按照当前变量决定
-@each $name, $color in $color-map
-    .shadow-#{$name}
+    .hover-tran-#{"" + $color-name}
+        color: $color
+        border: 1px solid $color
+        transition: all 0.2s
+        background: transparent
+        &:hover
+            background: $color
+            color: if($color-name == 'yellow', black, white)
+            border: 1px solid $color
+
+@each $color-name, $color in $color-map
+    .shadow-#{"" + $color-name}
         box-shadow: 0 0 12px 2px $color
 
 .float-up
@@ -220,7 +491,6 @@ $color-map: (
     &:hover
         transform: translateY(5px)
 
-/* v1.0.1 New Styles */
 .sm-fat
     border-radius: 50px
     padding: 10px 15px
@@ -230,22 +500,94 @@ $color-map: (
     border-radius: 50px
     padding: 5px 13px
 
-// 循环生成带颜色的 hover 玻璃效果类
-@each $name, $color in $color-map
-    .hover-glass-#{$name}
-        background: rgba(red($color), green($color), blue($color), 0.15)
+@each $color-name, $color in $color-map
+    .hover-glass-#{"" + $color-name}
+        background: rgba(color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb), 0.15)
         backdrop-filter: blur(10px)
         -webkit-backdrop-filter: blur(10px)
-        border: 1px solid rgba(red($color), green($color), blue($color), 0.2)
-        box-shadow: 0 8px 32px rgba(red($color), green($color), blue($color), 0.2)
+        border: 1px solid rgba(color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb), 0.2)
+        box-shadow: 0 8px 32px rgba(color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb), 0.2)
         transition: all 0.25s ease
         cursor: pointer
         text-decoration: none
-        color: if($name == 'yellow', black, white)
+        color: if($color-name == 'yellow', black, white)
         &:hover
-            background: rgba(red($color), green($color), blue($color), 0.15)
+            background: rgba(color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb), 0.15)
             transform: scale(1.05)
-            box-shadow: 0 12px 40px rgba(red($color), green($color), blue($color), 0.25)
+            box-shadow: 0 12px 40px rgba(color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb), 0.25)
         &:active
             transform: scale(0.96)
-            box-shadow: 0 4px 16px rgba(red($color), green($color), blue($color), 0.2)
+            box-shadow: 0 4px 16px rgba(color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb), 0.2)
+
+.hover-border
+    background-color: #fff
+    border: 2px solid #000
+    color: #000
+    cursor: pointer
+    font-size: 16px
+    outline: 0
+    text-decoration: none
+    transition: all .3s
+    touch-action: manipulation
+
+    &:focus
+        color: #171e29
+
+    &:hover
+        border-color: #06f
+        color: #06f
+        fill: #06f
+
+    &:active
+        border-color: #06f
+        color: #06f
+        fill: #06f
+
+@each $color-name, $color in $color-map
+    .hover-border-#{"" + $color-name}
+        background-color: #fff
+        border: 2px solid #000
+        color: #000
+        cursor: pointer
+        font-size: 16px
+        outline: 0
+        text-decoration: none
+        transition: all .3s
+        touch-action: manipulation
+
+        &:focus
+            color: $color
+
+        &:hover
+            border-color: $color
+            color: $color
+            fill: $color
+
+        &:active
+            border-color: $color
+            color: $color
+            fill: $color
+
+@each $color-name, $color in $color-map          
+    .hover-border-tran-#{"" + $color-name}
+        background-color: transparent
+        border: 2px solid $color
+        color: $color
+        cursor: pointer
+        font-size: 16px
+        outline: 0
+        text-decoration: none
+        transition: all .3s
+        touch-action: manipulation
+
+        &:hover
+            background-color: rgba(color.channel($color, "red"), color.channel($color, "green"), color.channel($color, "blue"), 0.1)
+            border-color: $color
+            color: $color
+            fill: $color
+
+        &:active
+            background-color: rgba(color.channel($color, "red"), color.channel($color, "green"), color.channel($color, "blue"), 0.2)
+            border-color: $color
+            color: $color
+            fill: $color
