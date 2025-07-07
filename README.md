@@ -75,7 +75,7 @@ beta3版本中，由于压缩后的文件仍然较大，你可以选择引入**�
 或者Hover版：
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Turbo-Flint/cool-button@latest/css/hoverc.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Turbo-Flint/cool-button@latest/css/hover.min.css">
 ```
 
 **当前Beta版本可能会随时修改样式，请在使用时注意更新。**
