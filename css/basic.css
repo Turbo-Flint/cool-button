@@ -1,0 +1,5683 @@
+@charset "UTF-8";
+/* v2.0 重构版 2025/6/10 */
+.c-btn {
+  outline: none;
+  border: none;
+  padding: 10px 40px;
+  font-size: 15px;
+  text-align: center;
+}
+@media (prefers-color-scheme: light) {
+  .c-btn {
+    background: #000000;
+    color: white;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .c-btn {
+    background: white;
+  }
+}
+
+.text-white {
+  color: white !important;
+}
+
+.btn-bold {
+  font-weight: bold;
+}
+
+.border-bold {
+  border-width: 10px;
+}
+
+.square {
+  border-radius: 0px;
+}
+
+.radius {
+  border-radius: 50px;
+}
+
+.circle {
+  padding: 6px 15px;
+  border-radius: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.less-padding {
+  padding: 10px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.flat {
+  padding: 3px 30px;
+  text-align: center;
+}
+
+.padding {
+  padding: 10px 40px;
+}
+
+.icon {
+  padding: 10px 12px 8px 12px;
+}
+
+.sm {
+  padding: 6px 30px;
+  font-size: 14px;
+}
+
+.md {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.lg {
+  padding: 14px 40px;
+  font-size: 22px;
+}
+
+.block {
+  padding: 12px 80px;
+}
+
+.full-block {
+  width: 100%;
+  padding: 12px 0;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 250, 250, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red-10 {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red-20 {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red-30 {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red-40 {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red-50 {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red-60 {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red-70 {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red-80 {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-red-90 {
+  background: rgba(222, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(222, 49, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange-10 {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange-20 {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange-30 {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange-40 {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange-50 {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange-60 {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange-70 {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange-80 {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-orange-90 {
+  background: rgba(239, 99, 43, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 99, 43, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine-10 {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine-20 {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine-30 {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine-40 {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine-50 {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine-60 {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine-70 {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine-80 {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-tangerine-90 {
+  background: rgba(250, 126, 35, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  box-shadow: 0 8px 32px rgba(250, 126, 35, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green-10 {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green-20 {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green-30 {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green-40 {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green-50 {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green-60 {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green-70 {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green-80 {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-green-90 {
+  background: rgba(36, 128, 103, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 128, 103, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald-10 {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald-20 {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald-30 {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald-40 {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald-50 {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald-60 {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald-70 {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald-80 {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-emerald-90 {
+  background: rgba(34, 148, 83, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  box-shadow: 0 8px 32px rgba(34, 148, 83, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint-10 {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint-20 {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint-30 {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint-40 {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint-50 {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint-60 {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint-70 {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint-80 {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-mint-90 {
+  background: rgba(32, 161, 98, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  box-shadow: 0 8px 32px rgba(32, 161, 98, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue-10 {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue-20 {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue-30 {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue-40 {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue-50 {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue-60 {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue-70 {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue-80 {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-blue-90 {
+  background: rgba(36, 134, 185, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  box-shadow: 0 8px 32px rgba(36, 134, 185, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue-10 {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue-20 {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue-30 {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue-40 {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue-50 {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue-60 {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue-70 {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue-80 {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-ocean-blue-90 {
+  background: rgba(14, 176, 201, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  box-shadow: 0 8px 32px rgba(14, 176, 201, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue-10 {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue-20 {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue-30 {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue-40 {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue-50 {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue-60 {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue-70 {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue-80 {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-deep-blue-90 {
+  background: rgba(4, 87, 251, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  box-shadow: 0 8px 32px rgba(4, 87, 251, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue-10 {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue-20 {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue-30 {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue-40 {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue-50 {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue-60 {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue-70 {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue-80 {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-sea-blue-90 {
+  background: rgba(1, 112, 227, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  box-shadow: 0 8px 32px rgba(1, 112, 227, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow-10 {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow-20 {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow-30 {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow-40 {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow-50 {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow-60 {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow-70 {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow-80 {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-yellow-90 {
+  background: rgba(251, 205, 49, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  box-shadow: 0 8px 32px rgba(251, 205, 49, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold-10 {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold-20 {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold-30 {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold-40 {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold-50 {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold-60 {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold-70 {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold-80 {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-gold-90 {
+  background: rgba(252, 195, 7, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  box-shadow: 0 8px 32px rgba(252, 195, 7, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple-10 {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple-20 {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple-30 {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple-40 {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple-50 {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple-60 {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple-70 {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple-80 {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-purple-90 {
+  background: rgba(126, 22, 113, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  box-shadow: 0 8px 32px rgba(126, 22, 113, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac-10 {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac-20 {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac-30 {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac-40 {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac-50 {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac-60 {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac-70 {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac-80 {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-lilac-90 {
+  background: rgba(128, 109, 158, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  box-shadow: 0 8px 32px rgba(128, 109, 158, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown-10 {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown-20 {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown-30 {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown-40 {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown-50 {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown-60 {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown-70 {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown-80 {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-brown-90 {
+  background: rgba(145, 128, 114, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  box-shadow: 0 8px 32px rgba(145, 128, 114, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink-10 {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink-20 {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink-30 {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink-40 {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink-50 {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink-60 {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink-70 {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink-80 {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.glass-pink-90 {
+  background: rgba(232, 122, 144, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  box-shadow: 0 8px 32px rgba(232, 122, 144, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.blur-5 {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-6 {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-7 {
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-8 {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-9 {
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-10 {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-11 {
+  -webkit-backdrop-filter: blur(11px);
+  backdrop-filter: blur(11px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-12 {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-13 {
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-14 {
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-15 {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-16 {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-17 {
+  -webkit-backdrop-filter: blur(17px);
+  backdrop-filter: blur(17px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-18 {
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-19 {
+  -webkit-backdrop-filter: blur(19px);
+  backdrop-filter: blur(19px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.blur-20 {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.red {
+  background: rgb(222, 49, 49);
+  color: white;
+}
+
+.red-10 {
+  background: rgba(222, 49, 49, 0.1);
+  color: white;
+}
+
+.red-20 {
+  background: rgba(222, 49, 49, 0.2);
+  color: white;
+}
+
+.red-30 {
+  background: rgba(222, 49, 49, 0.3);
+  color: white;
+}
+
+.red-40 {
+  background: rgba(222, 49, 49, 0.4);
+  color: white;
+}
+
+.red-50 {
+  background: rgba(222, 49, 49, 0.5);
+  color: white;
+}
+
+.red-60 {
+  background: rgba(222, 49, 49, 0.6);
+  color: white;
+}
+
+.red-70 {
+  background: rgba(222, 49, 49, 0.7);
+  color: white;
+}
+
+.red-80 {
+  background: rgba(222, 49, 49, 0.8);
+  color: white;
+}
+
+.red-90 {
+  background: rgba(222, 49, 49, 0.9);
+  color: white;
+}
+
+.orange {
+  background: rgb(239, 99, 43);
+  color: white;
+}
+
+.orange-10 {
+  background: rgba(239, 99, 43, 0.1);
+  color: white;
+}
+
+.orange-20 {
+  background: rgba(239, 99, 43, 0.2);
+  color: white;
+}
+
+.orange-30 {
+  background: rgba(239, 99, 43, 0.3);
+  color: white;
+}
+
+.orange-40 {
+  background: rgba(239, 99, 43, 0.4);
+  color: white;
+}
+
+.orange-50 {
+  background: rgba(239, 99, 43, 0.5);
+  color: white;
+}
+
+.orange-60 {
+  background: rgba(239, 99, 43, 0.6);
+  color: white;
+}
+
+.orange-70 {
+  background: rgba(239, 99, 43, 0.7);
+  color: white;
+}
+
+.orange-80 {
+  background: rgba(239, 99, 43, 0.8);
+  color: white;
+}
+
+.orange-90 {
+  background: rgba(239, 99, 43, 0.9);
+  color: white;
+}
+
+.tangerine {
+  background: rgb(250, 126, 35);
+  color: white;
+}
+
+.tangerine-10 {
+  background: rgba(250, 126, 35, 0.1);
+  color: white;
+}
+
+.tangerine-20 {
+  background: rgba(250, 126, 35, 0.2);
+  color: white;
+}
+
+.tangerine-30 {
+  background: rgba(250, 126, 35, 0.3);
+  color: white;
+}
+
+.tangerine-40 {
+  background: rgba(250, 126, 35, 0.4);
+  color: white;
+}
+
+.tangerine-50 {
+  background: rgba(250, 126, 35, 0.5);
+  color: white;
+}
+
+.tangerine-60 {
+  background: rgba(250, 126, 35, 0.6);
+  color: white;
+}
+
+.tangerine-70 {
+  background: rgba(250, 126, 35, 0.7);
+  color: white;
+}
+
+.tangerine-80 {
+  background: rgba(250, 126, 35, 0.8);
+  color: white;
+}
+
+.tangerine-90 {
+  background: rgba(250, 126, 35, 0.9);
+  color: white;
+}
+
+.green {
+  background: rgb(36, 128, 103);
+  color: white;
+}
+
+.green-10 {
+  background: rgba(36, 128, 103, 0.1);
+  color: white;
+}
+
+.green-20 {
+  background: rgba(36, 128, 103, 0.2);
+  color: white;
+}
+
+.green-30 {
+  background: rgba(36, 128, 103, 0.3);
+  color: white;
+}
+
+.green-40 {
+  background: rgba(36, 128, 103, 0.4);
+  color: white;
+}
+
+.green-50 {
+  background: rgba(36, 128, 103, 0.5);
+  color: white;
+}
+
+.green-60 {
+  background: rgba(36, 128, 103, 0.6);
+  color: white;
+}
+
+.green-70 {
+  background: rgba(36, 128, 103, 0.7);
+  color: white;
+}
+
+.green-80 {
+  background: rgba(36, 128, 103, 0.8);
+  color: white;
+}
+
+.green-90 {
+  background: rgba(36, 128, 103, 0.9);
+  color: white;
+}
+
+.emerald {
+  background: rgb(34, 148, 83);
+  color: white;
+}
+
+.emerald-10 {
+  background: rgba(34, 148, 83, 0.1);
+  color: white;
+}
+
+.emerald-20 {
+  background: rgba(34, 148, 83, 0.2);
+  color: white;
+}
+
+.emerald-30 {
+  background: rgba(34, 148, 83, 0.3);
+  color: white;
+}
+
+.emerald-40 {
+  background: rgba(34, 148, 83, 0.4);
+  color: white;
+}
+
+.emerald-50 {
+  background: rgba(34, 148, 83, 0.5);
+  color: white;
+}
+
+.emerald-60 {
+  background: rgba(34, 148, 83, 0.6);
+  color: white;
+}
+
+.emerald-70 {
+  background: rgba(34, 148, 83, 0.7);
+  color: white;
+}
+
+.emerald-80 {
+  background: rgba(34, 148, 83, 0.8);
+  color: white;
+}
+
+.emerald-90 {
+  background: rgba(34, 148, 83, 0.9);
+  color: white;
+}
+
+.mint {
+  background: rgb(32, 161, 98);
+  color: white;
+}
+
+.mint-10 {
+  background: rgba(32, 161, 98, 0.1);
+  color: white;
+}
+
+.mint-20 {
+  background: rgba(32, 161, 98, 0.2);
+  color: white;
+}
+
+.mint-30 {
+  background: rgba(32, 161, 98, 0.3);
+  color: white;
+}
+
+.mint-40 {
+  background: rgba(32, 161, 98, 0.4);
+  color: white;
+}
+
+.mint-50 {
+  background: rgba(32, 161, 98, 0.5);
+  color: white;
+}
+
+.mint-60 {
+  background: rgba(32, 161, 98, 0.6);
+  color: white;
+}
+
+.mint-70 {
+  background: rgba(32, 161, 98, 0.7);
+  color: white;
+}
+
+.mint-80 {
+  background: rgba(32, 161, 98, 0.8);
+  color: white;
+}
+
+.mint-90 {
+  background: rgba(32, 161, 98, 0.9);
+  color: white;
+}
+
+.blue {
+  background: rgb(36, 134, 185);
+  color: white;
+}
+
+.blue-10 {
+  background: rgba(36, 134, 185, 0.1);
+  color: white;
+}
+
+.blue-20 {
+  background: rgba(36, 134, 185, 0.2);
+  color: white;
+}
+
+.blue-30 {
+  background: rgba(36, 134, 185, 0.3);
+  color: white;
+}
+
+.blue-40 {
+  background: rgba(36, 134, 185, 0.4);
+  color: white;
+}
+
+.blue-50 {
+  background: rgba(36, 134, 185, 0.5);
+  color: white;
+}
+
+.blue-60 {
+  background: rgba(36, 134, 185, 0.6);
+  color: white;
+}
+
+.blue-70 {
+  background: rgba(36, 134, 185, 0.7);
+  color: white;
+}
+
+.blue-80 {
+  background: rgba(36, 134, 185, 0.8);
+  color: white;
+}
+
+.blue-90 {
+  background: rgba(36, 134, 185, 0.9);
+  color: white;
+}
+
+.ocean-blue {
+  background: rgb(14, 176, 201);
+  color: white;
+}
+
+.ocean-blue-10 {
+  background: rgba(14, 176, 201, 0.1);
+  color: white;
+}
+
+.ocean-blue-20 {
+  background: rgba(14, 176, 201, 0.2);
+  color: white;
+}
+
+.ocean-blue-30 {
+  background: rgba(14, 176, 201, 0.3);
+  color: white;
+}
+
+.ocean-blue-40 {
+  background: rgba(14, 176, 201, 0.4);
+  color: white;
+}
+
+.ocean-blue-50 {
+  background: rgba(14, 176, 201, 0.5);
+  color: white;
+}
+
+.ocean-blue-60 {
+  background: rgba(14, 176, 201, 0.6);
+  color: white;
+}
+
+.ocean-blue-70 {
+  background: rgba(14, 176, 201, 0.7);
+  color: white;
+}
+
+.ocean-blue-80 {
+  background: rgba(14, 176, 201, 0.8);
+  color: white;
+}
+
+.ocean-blue-90 {
+  background: rgba(14, 176, 201, 0.9);
+  color: white;
+}
+
+.deep-blue {
+  background: rgb(4, 87, 251);
+  color: white;
+}
+
+.deep-blue-10 {
+  background: rgba(4, 87, 251, 0.1);
+  color: white;
+}
+
+.deep-blue-20 {
+  background: rgba(4, 87, 251, 0.2);
+  color: white;
+}
+
+.deep-blue-30 {
+  background: rgba(4, 87, 251, 0.3);
+  color: white;
+}
+
+.deep-blue-40 {
+  background: rgba(4, 87, 251, 0.4);
+  color: white;
+}
+
+.deep-blue-50 {
+  background: rgba(4, 87, 251, 0.5);
+  color: white;
+}
+
+.deep-blue-60 {
+  background: rgba(4, 87, 251, 0.6);
+  color: white;
+}
+
+.deep-blue-70 {
+  background: rgba(4, 87, 251, 0.7);
+  color: white;
+}
+
+.deep-blue-80 {
+  background: rgba(4, 87, 251, 0.8);
+  color: white;
+}
+
+.deep-blue-90 {
+  background: rgba(4, 87, 251, 0.9);
+  color: white;
+}
+
+.sea-blue {
+  background: rgb(1, 112, 227);
+  color: white;
+}
+
+.sea-blue-10 {
+  background: rgba(1, 112, 227, 0.1);
+  color: white;
+}
+
+.sea-blue-20 {
+  background: rgba(1, 112, 227, 0.2);
+  color: white;
+}
+
+.sea-blue-30 {
+  background: rgba(1, 112, 227, 0.3);
+  color: white;
+}
+
+.sea-blue-40 {
+  background: rgba(1, 112, 227, 0.4);
+  color: white;
+}
+
+.sea-blue-50 {
+  background: rgba(1, 112, 227, 0.5);
+  color: white;
+}
+
+.sea-blue-60 {
+  background: rgba(1, 112, 227, 0.6);
+  color: white;
+}
+
+.sea-blue-70 {
+  background: rgba(1, 112, 227, 0.7);
+  color: white;
+}
+
+.sea-blue-80 {
+  background: rgba(1, 112, 227, 0.8);
+  color: white;
+}
+
+.sea-blue-90 {
+  background: rgba(1, 112, 227, 0.9);
+  color: white;
+}
+
+.yellow {
+  background: rgb(251, 205, 49);
+  color: white;
+}
+
+.yellow-10 {
+  background: rgba(251, 205, 49, 0.1);
+  color: white;
+}
+
+.yellow-20 {
+  background: rgba(251, 205, 49, 0.2);
+  color: white;
+}
+
+.yellow-30 {
+  background: rgba(251, 205, 49, 0.3);
+  color: white;
+}
+
+.yellow-40 {
+  background: rgba(251, 205, 49, 0.4);
+  color: white;
+}
+
+.yellow-50 {
+  background: rgba(251, 205, 49, 0.5);
+  color: white;
+}
+
+.yellow-60 {
+  background: rgba(251, 205, 49, 0.6);
+  color: white;
+}
+
+.yellow-70 {
+  background: rgba(251, 205, 49, 0.7);
+  color: white;
+}
+
+.yellow-80 {
+  background: rgba(251, 205, 49, 0.8);
+  color: white;
+}
+
+.yellow-90 {
+  background: rgba(251, 205, 49, 0.9);
+  color: white;
+}
+
+.gold {
+  background: rgb(252, 195, 7);
+  color: white;
+}
+
+.gold-10 {
+  background: rgba(252, 195, 7, 0.1);
+  color: white;
+}
+
+.gold-20 {
+  background: rgba(252, 195, 7, 0.2);
+  color: white;
+}
+
+.gold-30 {
+  background: rgba(252, 195, 7, 0.3);
+  color: white;
+}
+
+.gold-40 {
+  background: rgba(252, 195, 7, 0.4);
+  color: white;
+}
+
+.gold-50 {
+  background: rgba(252, 195, 7, 0.5);
+  color: white;
+}
+
+.gold-60 {
+  background: rgba(252, 195, 7, 0.6);
+  color: white;
+}
+
+.gold-70 {
+  background: rgba(252, 195, 7, 0.7);
+  color: white;
+}
+
+.gold-80 {
+  background: rgba(252, 195, 7, 0.8);
+  color: white;
+}
+
+.gold-90 {
+  background: rgba(252, 195, 7, 0.9);
+  color: white;
+}
+
+.purple {
+  background: rgb(126, 22, 113);
+  color: white;
+}
+
+.purple-10 {
+  background: rgba(126, 22, 113, 0.1);
+  color: white;
+}
+
+.purple-20 {
+  background: rgba(126, 22, 113, 0.2);
+  color: white;
+}
+
+.purple-30 {
+  background: rgba(126, 22, 113, 0.3);
+  color: white;
+}
+
+.purple-40 {
+  background: rgba(126, 22, 113, 0.4);
+  color: white;
+}
+
+.purple-50 {
+  background: rgba(126, 22, 113, 0.5);
+  color: white;
+}
+
+.purple-60 {
+  background: rgba(126, 22, 113, 0.6);
+  color: white;
+}
+
+.purple-70 {
+  background: rgba(126, 22, 113, 0.7);
+  color: white;
+}
+
+.purple-80 {
+  background: rgba(126, 22, 113, 0.8);
+  color: white;
+}
+
+.purple-90 {
+  background: rgba(126, 22, 113, 0.9);
+  color: white;
+}
+
+.lilac {
+  background: rgb(128, 109, 158);
+  color: white;
+}
+
+.lilac-10 {
+  background: rgba(128, 109, 158, 0.1);
+  color: white;
+}
+
+.lilac-20 {
+  background: rgba(128, 109, 158, 0.2);
+  color: white;
+}
+
+.lilac-30 {
+  background: rgba(128, 109, 158, 0.3);
+  color: white;
+}
+
+.lilac-40 {
+  background: rgba(128, 109, 158, 0.4);
+  color: white;
+}
+
+.lilac-50 {
+  background: rgba(128, 109, 158, 0.5);
+  color: white;
+}
+
+.lilac-60 {
+  background: rgba(128, 109, 158, 0.6);
+  color: white;
+}
+
+.lilac-70 {
+  background: rgba(128, 109, 158, 0.7);
+  color: white;
+}
+
+.lilac-80 {
+  background: rgba(128, 109, 158, 0.8);
+  color: white;
+}
+
+.lilac-90 {
+  background: rgba(128, 109, 158, 0.9);
+  color: white;
+}
+
+.brown {
+  background: rgb(145, 128, 114);
+  color: white;
+}
+
+.brown-10 {
+  background: rgba(145, 128, 114, 0.1);
+  color: white;
+}
+
+.brown-20 {
+  background: rgba(145, 128, 114, 0.2);
+  color: white;
+}
+
+.brown-30 {
+  background: rgba(145, 128, 114, 0.3);
+  color: white;
+}
+
+.brown-40 {
+  background: rgba(145, 128, 114, 0.4);
+  color: white;
+}
+
+.brown-50 {
+  background: rgba(145, 128, 114, 0.5);
+  color: white;
+}
+
+.brown-60 {
+  background: rgba(145, 128, 114, 0.6);
+  color: white;
+}
+
+.brown-70 {
+  background: rgba(145, 128, 114, 0.7);
+  color: white;
+}
+
+.brown-80 {
+  background: rgba(145, 128, 114, 0.8);
+  color: white;
+}
+
+.brown-90 {
+  background: rgba(145, 128, 114, 0.9);
+  color: white;
+}
+
+.pink {
+  background: rgb(232, 122, 144);
+  color: white;
+}
+
+.pink-10 {
+  background: rgba(232, 122, 144, 0.1);
+  color: white;
+}
+
+.pink-20 {
+  background: rgba(232, 122, 144, 0.2);
+  color: white;
+}
+
+.pink-30 {
+  background: rgba(232, 122, 144, 0.3);
+  color: white;
+}
+
+.pink-40 {
+  background: rgba(232, 122, 144, 0.4);
+  color: white;
+}
+
+.pink-50 {
+  background: rgba(232, 122, 144, 0.5);
+  color: white;
+}
+
+.pink-60 {
+  background: rgba(232, 122, 144, 0.6);
+  color: white;
+}
+
+.pink-70 {
+  background: rgba(232, 122, 144, 0.7);
+  color: white;
+}
+
+.pink-80 {
+  background: rgba(232, 122, 144, 0.8);
+  color: white;
+}
+
+.pink-90 {
+  background: rgba(232, 122, 144, 0.9);
+  color: white;
+}
+
+.shadow-red {
+  box-shadow: 0 0 12px 2px rgb(222, 49, 49);
+}
+
+.border-red {
+  color: rgb(222, 49, 49);
+  border: 1px solid rgb(222, 49, 49);
+  background: transparent;
+}
+
+.border-tran-red {
+  background-color: rgb(222, 49, 49);
+  border: 2px solid rgb(222, 49, 49);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-red-10 {
+  box-shadow: 0 0 12px 2px rgba(222, 49, 49, 0.1);
+}
+
+.border-red-10 {
+  color: rgba(222, 49, 49, 0.1);
+  border: 1px solid rgba(222, 49, 49, 0.1);
+  background: transparent;
+}
+
+.border-tran-red-10 {
+  background-color: rgba(222, 49, 49, 0.1);
+  border: 2px solid rgba(222, 49, 49, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-red-20 {
+  box-shadow: 0 0 12px 2px rgba(222, 49, 49, 0.2);
+}
+
+.border-red-20 {
+  color: rgba(222, 49, 49, 0.2);
+  border: 1px solid rgba(222, 49, 49, 0.2);
+  background: transparent;
+}
+
+.border-tran-red-20 {
+  background-color: rgba(222, 49, 49, 0.2);
+  border: 2px solid rgba(222, 49, 49, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-red-30 {
+  box-shadow: 0 0 12px 2px rgba(222, 49, 49, 0.3);
+}
+
+.border-red-30 {
+  color: rgba(222, 49, 49, 0.3);
+  border: 1px solid rgba(222, 49, 49, 0.3);
+  background: transparent;
+}
+
+.border-tran-red-30 {
+  background-color: rgba(222, 49, 49, 0.3);
+  border: 2px solid rgba(222, 49, 49, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-red-40 {
+  box-shadow: 0 0 12px 2px rgba(222, 49, 49, 0.4);
+}
+
+.border-red-40 {
+  color: rgba(222, 49, 49, 0.4);
+  border: 1px solid rgba(222, 49, 49, 0.4);
+  background: transparent;
+}
+
+.border-tran-red-40 {
+  background-color: rgba(222, 49, 49, 0.4);
+  border: 2px solid rgba(222, 49, 49, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-red-50 {
+  box-shadow: 0 0 12px 2px rgba(222, 49, 49, 0.5);
+}
+
+.border-red-50 {
+  color: rgba(222, 49, 49, 0.5);
+  border: 1px solid rgba(222, 49, 49, 0.5);
+  background: transparent;
+}
+
+.border-tran-red-50 {
+  background-color: rgba(222, 49, 49, 0.5);
+  border: 2px solid rgba(222, 49, 49, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-red-60 {
+  box-shadow: 0 0 12px 2px rgba(222, 49, 49, 0.6);
+}
+
+.border-red-60 {
+  color: rgba(222, 49, 49, 0.6);
+  border: 1px solid rgba(222, 49, 49, 0.6);
+  background: transparent;
+}
+
+.border-tran-red-60 {
+  background-color: rgba(222, 49, 49, 0.6);
+  border: 2px solid rgba(222, 49, 49, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-red-70 {
+  box-shadow: 0 0 12px 2px rgba(222, 49, 49, 0.7);
+}
+
+.border-red-70 {
+  color: rgba(222, 49, 49, 0.7);
+  border: 1px solid rgba(222, 49, 49, 0.7);
+  background: transparent;
+}
+
+.border-tran-red-70 {
+  background-color: rgba(222, 49, 49, 0.7);
+  border: 2px solid rgba(222, 49, 49, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-red-80 {
+  box-shadow: 0 0 12px 2px rgba(222, 49, 49, 0.8);
+}
+
+.border-red-80 {
+  color: rgba(222, 49, 49, 0.8);
+  border: 1px solid rgba(222, 49, 49, 0.8);
+  background: transparent;
+}
+
+.border-tran-red-80 {
+  background-color: rgba(222, 49, 49, 0.8);
+  border: 2px solid rgba(222, 49, 49, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-red-90 {
+  box-shadow: 0 0 12px 2px rgba(222, 49, 49, 0.9);
+}
+
+.border-red-90 {
+  color: rgba(222, 49, 49, 0.9);
+  border: 1px solid rgba(222, 49, 49, 0.9);
+  background: transparent;
+}
+
+.border-tran-red-90 {
+  background-color: rgba(222, 49, 49, 0.9);
+  border: 2px solid rgba(222, 49, 49, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange {
+  box-shadow: 0 0 12px 2px rgb(239, 99, 43);
+}
+
+.border-orange {
+  color: rgb(239, 99, 43);
+  border: 1px solid rgb(239, 99, 43);
+  background: transparent;
+}
+
+.border-tran-orange {
+  background-color: rgb(239, 99, 43);
+  border: 2px solid rgb(239, 99, 43);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange-10 {
+  box-shadow: 0 0 12px 2px rgba(239, 99, 43, 0.1);
+}
+
+.border-orange-10 {
+  color: rgba(239, 99, 43, 0.1);
+  border: 1px solid rgba(239, 99, 43, 0.1);
+  background: transparent;
+}
+
+.border-tran-orange-10 {
+  background-color: rgba(239, 99, 43, 0.1);
+  border: 2px solid rgba(239, 99, 43, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange-20 {
+  box-shadow: 0 0 12px 2px rgba(239, 99, 43, 0.2);
+}
+
+.border-orange-20 {
+  color: rgba(239, 99, 43, 0.2);
+  border: 1px solid rgba(239, 99, 43, 0.2);
+  background: transparent;
+}
+
+.border-tran-orange-20 {
+  background-color: rgba(239, 99, 43, 0.2);
+  border: 2px solid rgba(239, 99, 43, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange-30 {
+  box-shadow: 0 0 12px 2px rgba(239, 99, 43, 0.3);
+}
+
+.border-orange-30 {
+  color: rgba(239, 99, 43, 0.3);
+  border: 1px solid rgba(239, 99, 43, 0.3);
+  background: transparent;
+}
+
+.border-tran-orange-30 {
+  background-color: rgba(239, 99, 43, 0.3);
+  border: 2px solid rgba(239, 99, 43, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange-40 {
+  box-shadow: 0 0 12px 2px rgba(239, 99, 43, 0.4);
+}
+
+.border-orange-40 {
+  color: rgba(239, 99, 43, 0.4);
+  border: 1px solid rgba(239, 99, 43, 0.4);
+  background: transparent;
+}
+
+.border-tran-orange-40 {
+  background-color: rgba(239, 99, 43, 0.4);
+  border: 2px solid rgba(239, 99, 43, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange-50 {
+  box-shadow: 0 0 12px 2px rgba(239, 99, 43, 0.5);
+}
+
+.border-orange-50 {
+  color: rgba(239, 99, 43, 0.5);
+  border: 1px solid rgba(239, 99, 43, 0.5);
+  background: transparent;
+}
+
+.border-tran-orange-50 {
+  background-color: rgba(239, 99, 43, 0.5);
+  border: 2px solid rgba(239, 99, 43, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange-60 {
+  box-shadow: 0 0 12px 2px rgba(239, 99, 43, 0.6);
+}
+
+.border-orange-60 {
+  color: rgba(239, 99, 43, 0.6);
+  border: 1px solid rgba(239, 99, 43, 0.6);
+  background: transparent;
+}
+
+.border-tran-orange-60 {
+  background-color: rgba(239, 99, 43, 0.6);
+  border: 2px solid rgba(239, 99, 43, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange-70 {
+  box-shadow: 0 0 12px 2px rgba(239, 99, 43, 0.7);
+}
+
+.border-orange-70 {
+  color: rgba(239, 99, 43, 0.7);
+  border: 1px solid rgba(239, 99, 43, 0.7);
+  background: transparent;
+}
+
+.border-tran-orange-70 {
+  background-color: rgba(239, 99, 43, 0.7);
+  border: 2px solid rgba(239, 99, 43, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange-80 {
+  box-shadow: 0 0 12px 2px rgba(239, 99, 43, 0.8);
+}
+
+.border-orange-80 {
+  color: rgba(239, 99, 43, 0.8);
+  border: 1px solid rgba(239, 99, 43, 0.8);
+  background: transparent;
+}
+
+.border-tran-orange-80 {
+  background-color: rgba(239, 99, 43, 0.8);
+  border: 2px solid rgba(239, 99, 43, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-orange-90 {
+  box-shadow: 0 0 12px 2px rgba(239, 99, 43, 0.9);
+}
+
+.border-orange-90 {
+  color: rgba(239, 99, 43, 0.9);
+  border: 1px solid rgba(239, 99, 43, 0.9);
+  background: transparent;
+}
+
+.border-tran-orange-90 {
+  background-color: rgba(239, 99, 43, 0.9);
+  border: 2px solid rgba(239, 99, 43, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine {
+  box-shadow: 0 0 12px 2px rgb(250, 126, 35);
+}
+
+.border-tangerine {
+  color: rgb(250, 126, 35);
+  border: 1px solid rgb(250, 126, 35);
+  background: transparent;
+}
+
+.border-tran-tangerine {
+  background-color: rgb(250, 126, 35);
+  border: 2px solid rgb(250, 126, 35);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine-10 {
+  box-shadow: 0 0 12px 2px rgba(250, 126, 35, 0.1);
+}
+
+.border-tangerine-10 {
+  color: rgba(250, 126, 35, 0.1);
+  border: 1px solid rgba(250, 126, 35, 0.1);
+  background: transparent;
+}
+
+.border-tran-tangerine-10 {
+  background-color: rgba(250, 126, 35, 0.1);
+  border: 2px solid rgba(250, 126, 35, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine-20 {
+  box-shadow: 0 0 12px 2px rgba(250, 126, 35, 0.2);
+}
+
+.border-tangerine-20 {
+  color: rgba(250, 126, 35, 0.2);
+  border: 1px solid rgba(250, 126, 35, 0.2);
+  background: transparent;
+}
+
+.border-tran-tangerine-20 {
+  background-color: rgba(250, 126, 35, 0.2);
+  border: 2px solid rgba(250, 126, 35, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine-30 {
+  box-shadow: 0 0 12px 2px rgba(250, 126, 35, 0.3);
+}
+
+.border-tangerine-30 {
+  color: rgba(250, 126, 35, 0.3);
+  border: 1px solid rgba(250, 126, 35, 0.3);
+  background: transparent;
+}
+
+.border-tran-tangerine-30 {
+  background-color: rgba(250, 126, 35, 0.3);
+  border: 2px solid rgba(250, 126, 35, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine-40 {
+  box-shadow: 0 0 12px 2px rgba(250, 126, 35, 0.4);
+}
+
+.border-tangerine-40 {
+  color: rgba(250, 126, 35, 0.4);
+  border: 1px solid rgba(250, 126, 35, 0.4);
+  background: transparent;
+}
+
+.border-tran-tangerine-40 {
+  background-color: rgba(250, 126, 35, 0.4);
+  border: 2px solid rgba(250, 126, 35, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine-50 {
+  box-shadow: 0 0 12px 2px rgba(250, 126, 35, 0.5);
+}
+
+.border-tangerine-50 {
+  color: rgba(250, 126, 35, 0.5);
+  border: 1px solid rgba(250, 126, 35, 0.5);
+  background: transparent;
+}
+
+.border-tran-tangerine-50 {
+  background-color: rgba(250, 126, 35, 0.5);
+  border: 2px solid rgba(250, 126, 35, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine-60 {
+  box-shadow: 0 0 12px 2px rgba(250, 126, 35, 0.6);
+}
+
+.border-tangerine-60 {
+  color: rgba(250, 126, 35, 0.6);
+  border: 1px solid rgba(250, 126, 35, 0.6);
+  background: transparent;
+}
+
+.border-tran-tangerine-60 {
+  background-color: rgba(250, 126, 35, 0.6);
+  border: 2px solid rgba(250, 126, 35, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine-70 {
+  box-shadow: 0 0 12px 2px rgba(250, 126, 35, 0.7);
+}
+
+.border-tangerine-70 {
+  color: rgba(250, 126, 35, 0.7);
+  border: 1px solid rgba(250, 126, 35, 0.7);
+  background: transparent;
+}
+
+.border-tran-tangerine-70 {
+  background-color: rgba(250, 126, 35, 0.7);
+  border: 2px solid rgba(250, 126, 35, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine-80 {
+  box-shadow: 0 0 12px 2px rgba(250, 126, 35, 0.8);
+}
+
+.border-tangerine-80 {
+  color: rgba(250, 126, 35, 0.8);
+  border: 1px solid rgba(250, 126, 35, 0.8);
+  background: transparent;
+}
+
+.border-tran-tangerine-80 {
+  background-color: rgba(250, 126, 35, 0.8);
+  border: 2px solid rgba(250, 126, 35, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-tangerine-90 {
+  box-shadow: 0 0 12px 2px rgba(250, 126, 35, 0.9);
+}
+
+.border-tangerine-90 {
+  color: rgba(250, 126, 35, 0.9);
+  border: 1px solid rgba(250, 126, 35, 0.9);
+  background: transparent;
+}
+
+.border-tran-tangerine-90 {
+  background-color: rgba(250, 126, 35, 0.9);
+  border: 2px solid rgba(250, 126, 35, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green {
+  box-shadow: 0 0 12px 2px rgb(36, 128, 103);
+}
+
+.border-green {
+  color: rgb(36, 128, 103);
+  border: 1px solid rgb(36, 128, 103);
+  background: transparent;
+}
+
+.border-tran-green {
+  background-color: rgb(36, 128, 103);
+  border: 2px solid rgb(36, 128, 103);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green-10 {
+  box-shadow: 0 0 12px 2px rgba(36, 128, 103, 0.1);
+}
+
+.border-green-10 {
+  color: rgba(36, 128, 103, 0.1);
+  border: 1px solid rgba(36, 128, 103, 0.1);
+  background: transparent;
+}
+
+.border-tran-green-10 {
+  background-color: rgba(36, 128, 103, 0.1);
+  border: 2px solid rgba(36, 128, 103, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green-20 {
+  box-shadow: 0 0 12px 2px rgba(36, 128, 103, 0.2);
+}
+
+.border-green-20 {
+  color: rgba(36, 128, 103, 0.2);
+  border: 1px solid rgba(36, 128, 103, 0.2);
+  background: transparent;
+}
+
+.border-tran-green-20 {
+  background-color: rgba(36, 128, 103, 0.2);
+  border: 2px solid rgba(36, 128, 103, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green-30 {
+  box-shadow: 0 0 12px 2px rgba(36, 128, 103, 0.3);
+}
+
+.border-green-30 {
+  color: rgba(36, 128, 103, 0.3);
+  border: 1px solid rgba(36, 128, 103, 0.3);
+  background: transparent;
+}
+
+.border-tran-green-30 {
+  background-color: rgba(36, 128, 103, 0.3);
+  border: 2px solid rgba(36, 128, 103, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green-40 {
+  box-shadow: 0 0 12px 2px rgba(36, 128, 103, 0.4);
+}
+
+.border-green-40 {
+  color: rgba(36, 128, 103, 0.4);
+  border: 1px solid rgba(36, 128, 103, 0.4);
+  background: transparent;
+}
+
+.border-tran-green-40 {
+  background-color: rgba(36, 128, 103, 0.4);
+  border: 2px solid rgba(36, 128, 103, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green-50 {
+  box-shadow: 0 0 12px 2px rgba(36, 128, 103, 0.5);
+}
+
+.border-green-50 {
+  color: rgba(36, 128, 103, 0.5);
+  border: 1px solid rgba(36, 128, 103, 0.5);
+  background: transparent;
+}
+
+.border-tran-green-50 {
+  background-color: rgba(36, 128, 103, 0.5);
+  border: 2px solid rgba(36, 128, 103, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green-60 {
+  box-shadow: 0 0 12px 2px rgba(36, 128, 103, 0.6);
+}
+
+.border-green-60 {
+  color: rgba(36, 128, 103, 0.6);
+  border: 1px solid rgba(36, 128, 103, 0.6);
+  background: transparent;
+}
+
+.border-tran-green-60 {
+  background-color: rgba(36, 128, 103, 0.6);
+  border: 2px solid rgba(36, 128, 103, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green-70 {
+  box-shadow: 0 0 12px 2px rgba(36, 128, 103, 0.7);
+}
+
+.border-green-70 {
+  color: rgba(36, 128, 103, 0.7);
+  border: 1px solid rgba(36, 128, 103, 0.7);
+  background: transparent;
+}
+
+.border-tran-green-70 {
+  background-color: rgba(36, 128, 103, 0.7);
+  border: 2px solid rgba(36, 128, 103, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green-80 {
+  box-shadow: 0 0 12px 2px rgba(36, 128, 103, 0.8);
+}
+
+.border-green-80 {
+  color: rgba(36, 128, 103, 0.8);
+  border: 1px solid rgba(36, 128, 103, 0.8);
+  background: transparent;
+}
+
+.border-tran-green-80 {
+  background-color: rgba(36, 128, 103, 0.8);
+  border: 2px solid rgba(36, 128, 103, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-green-90 {
+  box-shadow: 0 0 12px 2px rgba(36, 128, 103, 0.9);
+}
+
+.border-green-90 {
+  color: rgba(36, 128, 103, 0.9);
+  border: 1px solid rgba(36, 128, 103, 0.9);
+  background: transparent;
+}
+
+.border-tran-green-90 {
+  background-color: rgba(36, 128, 103, 0.9);
+  border: 2px solid rgba(36, 128, 103, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald {
+  box-shadow: 0 0 12px 2px rgb(34, 148, 83);
+}
+
+.border-emerald {
+  color: rgb(34, 148, 83);
+  border: 1px solid rgb(34, 148, 83);
+  background: transparent;
+}
+
+.border-tran-emerald {
+  background-color: rgb(34, 148, 83);
+  border: 2px solid rgb(34, 148, 83);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald-10 {
+  box-shadow: 0 0 12px 2px rgba(34, 148, 83, 0.1);
+}
+
+.border-emerald-10 {
+  color: rgba(34, 148, 83, 0.1);
+  border: 1px solid rgba(34, 148, 83, 0.1);
+  background: transparent;
+}
+
+.border-tran-emerald-10 {
+  background-color: rgba(34, 148, 83, 0.1);
+  border: 2px solid rgba(34, 148, 83, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald-20 {
+  box-shadow: 0 0 12px 2px rgba(34, 148, 83, 0.2);
+}
+
+.border-emerald-20 {
+  color: rgba(34, 148, 83, 0.2);
+  border: 1px solid rgba(34, 148, 83, 0.2);
+  background: transparent;
+}
+
+.border-tran-emerald-20 {
+  background-color: rgba(34, 148, 83, 0.2);
+  border: 2px solid rgba(34, 148, 83, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald-30 {
+  box-shadow: 0 0 12px 2px rgba(34, 148, 83, 0.3);
+}
+
+.border-emerald-30 {
+  color: rgba(34, 148, 83, 0.3);
+  border: 1px solid rgba(34, 148, 83, 0.3);
+  background: transparent;
+}
+
+.border-tran-emerald-30 {
+  background-color: rgba(34, 148, 83, 0.3);
+  border: 2px solid rgba(34, 148, 83, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald-40 {
+  box-shadow: 0 0 12px 2px rgba(34, 148, 83, 0.4);
+}
+
+.border-emerald-40 {
+  color: rgba(34, 148, 83, 0.4);
+  border: 1px solid rgba(34, 148, 83, 0.4);
+  background: transparent;
+}
+
+.border-tran-emerald-40 {
+  background-color: rgba(34, 148, 83, 0.4);
+  border: 2px solid rgba(34, 148, 83, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald-50 {
+  box-shadow: 0 0 12px 2px rgba(34, 148, 83, 0.5);
+}
+
+.border-emerald-50 {
+  color: rgba(34, 148, 83, 0.5);
+  border: 1px solid rgba(34, 148, 83, 0.5);
+  background: transparent;
+}
+
+.border-tran-emerald-50 {
+  background-color: rgba(34, 148, 83, 0.5);
+  border: 2px solid rgba(34, 148, 83, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald-60 {
+  box-shadow: 0 0 12px 2px rgba(34, 148, 83, 0.6);
+}
+
+.border-emerald-60 {
+  color: rgba(34, 148, 83, 0.6);
+  border: 1px solid rgba(34, 148, 83, 0.6);
+  background: transparent;
+}
+
+.border-tran-emerald-60 {
+  background-color: rgba(34, 148, 83, 0.6);
+  border: 2px solid rgba(34, 148, 83, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald-70 {
+  box-shadow: 0 0 12px 2px rgba(34, 148, 83, 0.7);
+}
+
+.border-emerald-70 {
+  color: rgba(34, 148, 83, 0.7);
+  border: 1px solid rgba(34, 148, 83, 0.7);
+  background: transparent;
+}
+
+.border-tran-emerald-70 {
+  background-color: rgba(34, 148, 83, 0.7);
+  border: 2px solid rgba(34, 148, 83, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald-80 {
+  box-shadow: 0 0 12px 2px rgba(34, 148, 83, 0.8);
+}
+
+.border-emerald-80 {
+  color: rgba(34, 148, 83, 0.8);
+  border: 1px solid rgba(34, 148, 83, 0.8);
+  background: transparent;
+}
+
+.border-tran-emerald-80 {
+  background-color: rgba(34, 148, 83, 0.8);
+  border: 2px solid rgba(34, 148, 83, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-emerald-90 {
+  box-shadow: 0 0 12px 2px rgba(34, 148, 83, 0.9);
+}
+
+.border-emerald-90 {
+  color: rgba(34, 148, 83, 0.9);
+  border: 1px solid rgba(34, 148, 83, 0.9);
+  background: transparent;
+}
+
+.border-tran-emerald-90 {
+  background-color: rgba(34, 148, 83, 0.9);
+  border: 2px solid rgba(34, 148, 83, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint {
+  box-shadow: 0 0 12px 2px rgb(32, 161, 98);
+}
+
+.border-mint {
+  color: rgb(32, 161, 98);
+  border: 1px solid rgb(32, 161, 98);
+  background: transparent;
+}
+
+.border-tran-mint {
+  background-color: rgb(32, 161, 98);
+  border: 2px solid rgb(32, 161, 98);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint-10 {
+  box-shadow: 0 0 12px 2px rgba(32, 161, 98, 0.1);
+}
+
+.border-mint-10 {
+  color: rgba(32, 161, 98, 0.1);
+  border: 1px solid rgba(32, 161, 98, 0.1);
+  background: transparent;
+}
+
+.border-tran-mint-10 {
+  background-color: rgba(32, 161, 98, 0.1);
+  border: 2px solid rgba(32, 161, 98, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint-20 {
+  box-shadow: 0 0 12px 2px rgba(32, 161, 98, 0.2);
+}
+
+.border-mint-20 {
+  color: rgba(32, 161, 98, 0.2);
+  border: 1px solid rgba(32, 161, 98, 0.2);
+  background: transparent;
+}
+
+.border-tran-mint-20 {
+  background-color: rgba(32, 161, 98, 0.2);
+  border: 2px solid rgba(32, 161, 98, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint-30 {
+  box-shadow: 0 0 12px 2px rgba(32, 161, 98, 0.3);
+}
+
+.border-mint-30 {
+  color: rgba(32, 161, 98, 0.3);
+  border: 1px solid rgba(32, 161, 98, 0.3);
+  background: transparent;
+}
+
+.border-tran-mint-30 {
+  background-color: rgba(32, 161, 98, 0.3);
+  border: 2px solid rgba(32, 161, 98, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint-40 {
+  box-shadow: 0 0 12px 2px rgba(32, 161, 98, 0.4);
+}
+
+.border-mint-40 {
+  color: rgba(32, 161, 98, 0.4);
+  border: 1px solid rgba(32, 161, 98, 0.4);
+  background: transparent;
+}
+
+.border-tran-mint-40 {
+  background-color: rgba(32, 161, 98, 0.4);
+  border: 2px solid rgba(32, 161, 98, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint-50 {
+  box-shadow: 0 0 12px 2px rgba(32, 161, 98, 0.5);
+}
+
+.border-mint-50 {
+  color: rgba(32, 161, 98, 0.5);
+  border: 1px solid rgba(32, 161, 98, 0.5);
+  background: transparent;
+}
+
+.border-tran-mint-50 {
+  background-color: rgba(32, 161, 98, 0.5);
+  border: 2px solid rgba(32, 161, 98, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint-60 {
+  box-shadow: 0 0 12px 2px rgba(32, 161, 98, 0.6);
+}
+
+.border-mint-60 {
+  color: rgba(32, 161, 98, 0.6);
+  border: 1px solid rgba(32, 161, 98, 0.6);
+  background: transparent;
+}
+
+.border-tran-mint-60 {
+  background-color: rgba(32, 161, 98, 0.6);
+  border: 2px solid rgba(32, 161, 98, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint-70 {
+  box-shadow: 0 0 12px 2px rgba(32, 161, 98, 0.7);
+}
+
+.border-mint-70 {
+  color: rgba(32, 161, 98, 0.7);
+  border: 1px solid rgba(32, 161, 98, 0.7);
+  background: transparent;
+}
+
+.border-tran-mint-70 {
+  background-color: rgba(32, 161, 98, 0.7);
+  border: 2px solid rgba(32, 161, 98, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint-80 {
+  box-shadow: 0 0 12px 2px rgba(32, 161, 98, 0.8);
+}
+
+.border-mint-80 {
+  color: rgba(32, 161, 98, 0.8);
+  border: 1px solid rgba(32, 161, 98, 0.8);
+  background: transparent;
+}
+
+.border-tran-mint-80 {
+  background-color: rgba(32, 161, 98, 0.8);
+  border: 2px solid rgba(32, 161, 98, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-mint-90 {
+  box-shadow: 0 0 12px 2px rgba(32, 161, 98, 0.9);
+}
+
+.border-mint-90 {
+  color: rgba(32, 161, 98, 0.9);
+  border: 1px solid rgba(32, 161, 98, 0.9);
+  background: transparent;
+}
+
+.border-tran-mint-90 {
+  background-color: rgba(32, 161, 98, 0.9);
+  border: 2px solid rgba(32, 161, 98, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue {
+  box-shadow: 0 0 12px 2px rgb(36, 134, 185);
+}
+
+.border-blue {
+  color: rgb(36, 134, 185);
+  border: 1px solid rgb(36, 134, 185);
+  background: transparent;
+}
+
+.border-tran-blue {
+  background-color: rgb(36, 134, 185);
+  border: 2px solid rgb(36, 134, 185);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue-10 {
+  box-shadow: 0 0 12px 2px rgba(36, 134, 185, 0.1);
+}
+
+.border-blue-10 {
+  color: rgba(36, 134, 185, 0.1);
+  border: 1px solid rgba(36, 134, 185, 0.1);
+  background: transparent;
+}
+
+.border-tran-blue-10 {
+  background-color: rgba(36, 134, 185, 0.1);
+  border: 2px solid rgba(36, 134, 185, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue-20 {
+  box-shadow: 0 0 12px 2px rgba(36, 134, 185, 0.2);
+}
+
+.border-blue-20 {
+  color: rgba(36, 134, 185, 0.2);
+  border: 1px solid rgba(36, 134, 185, 0.2);
+  background: transparent;
+}
+
+.border-tran-blue-20 {
+  background-color: rgba(36, 134, 185, 0.2);
+  border: 2px solid rgba(36, 134, 185, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue-30 {
+  box-shadow: 0 0 12px 2px rgba(36, 134, 185, 0.3);
+}
+
+.border-blue-30 {
+  color: rgba(36, 134, 185, 0.3);
+  border: 1px solid rgba(36, 134, 185, 0.3);
+  background: transparent;
+}
+
+.border-tran-blue-30 {
+  background-color: rgba(36, 134, 185, 0.3);
+  border: 2px solid rgba(36, 134, 185, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue-40 {
+  box-shadow: 0 0 12px 2px rgba(36, 134, 185, 0.4);
+}
+
+.border-blue-40 {
+  color: rgba(36, 134, 185, 0.4);
+  border: 1px solid rgba(36, 134, 185, 0.4);
+  background: transparent;
+}
+
+.border-tran-blue-40 {
+  background-color: rgba(36, 134, 185, 0.4);
+  border: 2px solid rgba(36, 134, 185, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue-50 {
+  box-shadow: 0 0 12px 2px rgba(36, 134, 185, 0.5);
+}
+
+.border-blue-50 {
+  color: rgba(36, 134, 185, 0.5);
+  border: 1px solid rgba(36, 134, 185, 0.5);
+  background: transparent;
+}
+
+.border-tran-blue-50 {
+  background-color: rgba(36, 134, 185, 0.5);
+  border: 2px solid rgba(36, 134, 185, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue-60 {
+  box-shadow: 0 0 12px 2px rgba(36, 134, 185, 0.6);
+}
+
+.border-blue-60 {
+  color: rgba(36, 134, 185, 0.6);
+  border: 1px solid rgba(36, 134, 185, 0.6);
+  background: transparent;
+}
+
+.border-tran-blue-60 {
+  background-color: rgba(36, 134, 185, 0.6);
+  border: 2px solid rgba(36, 134, 185, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue-70 {
+  box-shadow: 0 0 12px 2px rgba(36, 134, 185, 0.7);
+}
+
+.border-blue-70 {
+  color: rgba(36, 134, 185, 0.7);
+  border: 1px solid rgba(36, 134, 185, 0.7);
+  background: transparent;
+}
+
+.border-tran-blue-70 {
+  background-color: rgba(36, 134, 185, 0.7);
+  border: 2px solid rgba(36, 134, 185, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue-80 {
+  box-shadow: 0 0 12px 2px rgba(36, 134, 185, 0.8);
+}
+
+.border-blue-80 {
+  color: rgba(36, 134, 185, 0.8);
+  border: 1px solid rgba(36, 134, 185, 0.8);
+  background: transparent;
+}
+
+.border-tran-blue-80 {
+  background-color: rgba(36, 134, 185, 0.8);
+  border: 2px solid rgba(36, 134, 185, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-blue-90 {
+  box-shadow: 0 0 12px 2px rgba(36, 134, 185, 0.9);
+}
+
+.border-blue-90 {
+  color: rgba(36, 134, 185, 0.9);
+  border: 1px solid rgba(36, 134, 185, 0.9);
+  background: transparent;
+}
+
+.border-tran-blue-90 {
+  background-color: rgba(36, 134, 185, 0.9);
+  border: 2px solid rgba(36, 134, 185, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue {
+  box-shadow: 0 0 12px 2px rgb(14, 176, 201);
+}
+
+.border-ocean-blue {
+  color: rgb(14, 176, 201);
+  border: 1px solid rgb(14, 176, 201);
+  background: transparent;
+}
+
+.border-tran-ocean-blue {
+  background-color: rgb(14, 176, 201);
+  border: 2px solid rgb(14, 176, 201);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue-10 {
+  box-shadow: 0 0 12px 2px rgba(14, 176, 201, 0.1);
+}
+
+.border-ocean-blue-10 {
+  color: rgba(14, 176, 201, 0.1);
+  border: 1px solid rgba(14, 176, 201, 0.1);
+  background: transparent;
+}
+
+.border-tran-ocean-blue-10 {
+  background-color: rgba(14, 176, 201, 0.1);
+  border: 2px solid rgba(14, 176, 201, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue-20 {
+  box-shadow: 0 0 12px 2px rgba(14, 176, 201, 0.2);
+}
+
+.border-ocean-blue-20 {
+  color: rgba(14, 176, 201, 0.2);
+  border: 1px solid rgba(14, 176, 201, 0.2);
+  background: transparent;
+}
+
+.border-tran-ocean-blue-20 {
+  background-color: rgba(14, 176, 201, 0.2);
+  border: 2px solid rgba(14, 176, 201, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue-30 {
+  box-shadow: 0 0 12px 2px rgba(14, 176, 201, 0.3);
+}
+
+.border-ocean-blue-30 {
+  color: rgba(14, 176, 201, 0.3);
+  border: 1px solid rgba(14, 176, 201, 0.3);
+  background: transparent;
+}
+
+.border-tran-ocean-blue-30 {
+  background-color: rgba(14, 176, 201, 0.3);
+  border: 2px solid rgba(14, 176, 201, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue-40 {
+  box-shadow: 0 0 12px 2px rgba(14, 176, 201, 0.4);
+}
+
+.border-ocean-blue-40 {
+  color: rgba(14, 176, 201, 0.4);
+  border: 1px solid rgba(14, 176, 201, 0.4);
+  background: transparent;
+}
+
+.border-tran-ocean-blue-40 {
+  background-color: rgba(14, 176, 201, 0.4);
+  border: 2px solid rgba(14, 176, 201, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue-50 {
+  box-shadow: 0 0 12px 2px rgba(14, 176, 201, 0.5);
+}
+
+.border-ocean-blue-50 {
+  color: rgba(14, 176, 201, 0.5);
+  border: 1px solid rgba(14, 176, 201, 0.5);
+  background: transparent;
+}
+
+.border-tran-ocean-blue-50 {
+  background-color: rgba(14, 176, 201, 0.5);
+  border: 2px solid rgba(14, 176, 201, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue-60 {
+  box-shadow: 0 0 12px 2px rgba(14, 176, 201, 0.6);
+}
+
+.border-ocean-blue-60 {
+  color: rgba(14, 176, 201, 0.6);
+  border: 1px solid rgba(14, 176, 201, 0.6);
+  background: transparent;
+}
+
+.border-tran-ocean-blue-60 {
+  background-color: rgba(14, 176, 201, 0.6);
+  border: 2px solid rgba(14, 176, 201, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue-70 {
+  box-shadow: 0 0 12px 2px rgba(14, 176, 201, 0.7);
+}
+
+.border-ocean-blue-70 {
+  color: rgba(14, 176, 201, 0.7);
+  border: 1px solid rgba(14, 176, 201, 0.7);
+  background: transparent;
+}
+
+.border-tran-ocean-blue-70 {
+  background-color: rgba(14, 176, 201, 0.7);
+  border: 2px solid rgba(14, 176, 201, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue-80 {
+  box-shadow: 0 0 12px 2px rgba(14, 176, 201, 0.8);
+}
+
+.border-ocean-blue-80 {
+  color: rgba(14, 176, 201, 0.8);
+  border: 1px solid rgba(14, 176, 201, 0.8);
+  background: transparent;
+}
+
+.border-tran-ocean-blue-80 {
+  background-color: rgba(14, 176, 201, 0.8);
+  border: 2px solid rgba(14, 176, 201, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-ocean-blue-90 {
+  box-shadow: 0 0 12px 2px rgba(14, 176, 201, 0.9);
+}
+
+.border-ocean-blue-90 {
+  color: rgba(14, 176, 201, 0.9);
+  border: 1px solid rgba(14, 176, 201, 0.9);
+  background: transparent;
+}
+
+.border-tran-ocean-blue-90 {
+  background-color: rgba(14, 176, 201, 0.9);
+  border: 2px solid rgba(14, 176, 201, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue {
+  box-shadow: 0 0 12px 2px rgb(4, 87, 251);
+}
+
+.border-deep-blue {
+  color: rgb(4, 87, 251);
+  border: 1px solid rgb(4, 87, 251);
+  background: transparent;
+}
+
+.border-tran-deep-blue {
+  background-color: rgb(4, 87, 251);
+  border: 2px solid rgb(4, 87, 251);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue-10 {
+  box-shadow: 0 0 12px 2px rgba(4, 87, 251, 0.1);
+}
+
+.border-deep-blue-10 {
+  color: rgba(4, 87, 251, 0.1);
+  border: 1px solid rgba(4, 87, 251, 0.1);
+  background: transparent;
+}
+
+.border-tran-deep-blue-10 {
+  background-color: rgba(4, 87, 251, 0.1);
+  border: 2px solid rgba(4, 87, 251, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue-20 {
+  box-shadow: 0 0 12px 2px rgba(4, 87, 251, 0.2);
+}
+
+.border-deep-blue-20 {
+  color: rgba(4, 87, 251, 0.2);
+  border: 1px solid rgba(4, 87, 251, 0.2);
+  background: transparent;
+}
+
+.border-tran-deep-blue-20 {
+  background-color: rgba(4, 87, 251, 0.2);
+  border: 2px solid rgba(4, 87, 251, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue-30 {
+  box-shadow: 0 0 12px 2px rgba(4, 87, 251, 0.3);
+}
+
+.border-deep-blue-30 {
+  color: rgba(4, 87, 251, 0.3);
+  border: 1px solid rgba(4, 87, 251, 0.3);
+  background: transparent;
+}
+
+.border-tran-deep-blue-30 {
+  background-color: rgba(4, 87, 251, 0.3);
+  border: 2px solid rgba(4, 87, 251, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue-40 {
+  box-shadow: 0 0 12px 2px rgba(4, 87, 251, 0.4);
+}
+
+.border-deep-blue-40 {
+  color: rgba(4, 87, 251, 0.4);
+  border: 1px solid rgba(4, 87, 251, 0.4);
+  background: transparent;
+}
+
+.border-tran-deep-blue-40 {
+  background-color: rgba(4, 87, 251, 0.4);
+  border: 2px solid rgba(4, 87, 251, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue-50 {
+  box-shadow: 0 0 12px 2px rgba(4, 87, 251, 0.5);
+}
+
+.border-deep-blue-50 {
+  color: rgba(4, 87, 251, 0.5);
+  border: 1px solid rgba(4, 87, 251, 0.5);
+  background: transparent;
+}
+
+.border-tran-deep-blue-50 {
+  background-color: rgba(4, 87, 251, 0.5);
+  border: 2px solid rgba(4, 87, 251, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue-60 {
+  box-shadow: 0 0 12px 2px rgba(4, 87, 251, 0.6);
+}
+
+.border-deep-blue-60 {
+  color: rgba(4, 87, 251, 0.6);
+  border: 1px solid rgba(4, 87, 251, 0.6);
+  background: transparent;
+}
+
+.border-tran-deep-blue-60 {
+  background-color: rgba(4, 87, 251, 0.6);
+  border: 2px solid rgba(4, 87, 251, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue-70 {
+  box-shadow: 0 0 12px 2px rgba(4, 87, 251, 0.7);
+}
+
+.border-deep-blue-70 {
+  color: rgba(4, 87, 251, 0.7);
+  border: 1px solid rgba(4, 87, 251, 0.7);
+  background: transparent;
+}
+
+.border-tran-deep-blue-70 {
+  background-color: rgba(4, 87, 251, 0.7);
+  border: 2px solid rgba(4, 87, 251, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue-80 {
+  box-shadow: 0 0 12px 2px rgba(4, 87, 251, 0.8);
+}
+
+.border-deep-blue-80 {
+  color: rgba(4, 87, 251, 0.8);
+  border: 1px solid rgba(4, 87, 251, 0.8);
+  background: transparent;
+}
+
+.border-tran-deep-blue-80 {
+  background-color: rgba(4, 87, 251, 0.8);
+  border: 2px solid rgba(4, 87, 251, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-deep-blue-90 {
+  box-shadow: 0 0 12px 2px rgba(4, 87, 251, 0.9);
+}
+
+.border-deep-blue-90 {
+  color: rgba(4, 87, 251, 0.9);
+  border: 1px solid rgba(4, 87, 251, 0.9);
+  background: transparent;
+}
+
+.border-tran-deep-blue-90 {
+  background-color: rgba(4, 87, 251, 0.9);
+  border: 2px solid rgba(4, 87, 251, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue {
+  box-shadow: 0 0 12px 2px rgb(1, 112, 227);
+}
+
+.border-sea-blue {
+  color: rgb(1, 112, 227);
+  border: 1px solid rgb(1, 112, 227);
+  background: transparent;
+}
+
+.border-tran-sea-blue {
+  background-color: rgb(1, 112, 227);
+  border: 2px solid rgb(1, 112, 227);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue-10 {
+  box-shadow: 0 0 12px 2px rgba(1, 112, 227, 0.1);
+}
+
+.border-sea-blue-10 {
+  color: rgba(1, 112, 227, 0.1);
+  border: 1px solid rgba(1, 112, 227, 0.1);
+  background: transparent;
+}
+
+.border-tran-sea-blue-10 {
+  background-color: rgba(1, 112, 227, 0.1);
+  border: 2px solid rgba(1, 112, 227, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue-20 {
+  box-shadow: 0 0 12px 2px rgba(1, 112, 227, 0.2);
+}
+
+.border-sea-blue-20 {
+  color: rgba(1, 112, 227, 0.2);
+  border: 1px solid rgba(1, 112, 227, 0.2);
+  background: transparent;
+}
+
+.border-tran-sea-blue-20 {
+  background-color: rgba(1, 112, 227, 0.2);
+  border: 2px solid rgba(1, 112, 227, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue-30 {
+  box-shadow: 0 0 12px 2px rgba(1, 112, 227, 0.3);
+}
+
+.border-sea-blue-30 {
+  color: rgba(1, 112, 227, 0.3);
+  border: 1px solid rgba(1, 112, 227, 0.3);
+  background: transparent;
+}
+
+.border-tran-sea-blue-30 {
+  background-color: rgba(1, 112, 227, 0.3);
+  border: 2px solid rgba(1, 112, 227, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue-40 {
+  box-shadow: 0 0 12px 2px rgba(1, 112, 227, 0.4);
+}
+
+.border-sea-blue-40 {
+  color: rgba(1, 112, 227, 0.4);
+  border: 1px solid rgba(1, 112, 227, 0.4);
+  background: transparent;
+}
+
+.border-tran-sea-blue-40 {
+  background-color: rgba(1, 112, 227, 0.4);
+  border: 2px solid rgba(1, 112, 227, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue-50 {
+  box-shadow: 0 0 12px 2px rgba(1, 112, 227, 0.5);
+}
+
+.border-sea-blue-50 {
+  color: rgba(1, 112, 227, 0.5);
+  border: 1px solid rgba(1, 112, 227, 0.5);
+  background: transparent;
+}
+
+.border-tran-sea-blue-50 {
+  background-color: rgba(1, 112, 227, 0.5);
+  border: 2px solid rgba(1, 112, 227, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue-60 {
+  box-shadow: 0 0 12px 2px rgba(1, 112, 227, 0.6);
+}
+
+.border-sea-blue-60 {
+  color: rgba(1, 112, 227, 0.6);
+  border: 1px solid rgba(1, 112, 227, 0.6);
+  background: transparent;
+}
+
+.border-tran-sea-blue-60 {
+  background-color: rgba(1, 112, 227, 0.6);
+  border: 2px solid rgba(1, 112, 227, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue-70 {
+  box-shadow: 0 0 12px 2px rgba(1, 112, 227, 0.7);
+}
+
+.border-sea-blue-70 {
+  color: rgba(1, 112, 227, 0.7);
+  border: 1px solid rgba(1, 112, 227, 0.7);
+  background: transparent;
+}
+
+.border-tran-sea-blue-70 {
+  background-color: rgba(1, 112, 227, 0.7);
+  border: 2px solid rgba(1, 112, 227, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue-80 {
+  box-shadow: 0 0 12px 2px rgba(1, 112, 227, 0.8);
+}
+
+.border-sea-blue-80 {
+  color: rgba(1, 112, 227, 0.8);
+  border: 1px solid rgba(1, 112, 227, 0.8);
+  background: transparent;
+}
+
+.border-tran-sea-blue-80 {
+  background-color: rgba(1, 112, 227, 0.8);
+  border: 2px solid rgba(1, 112, 227, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-sea-blue-90 {
+  box-shadow: 0 0 12px 2px rgba(1, 112, 227, 0.9);
+}
+
+.border-sea-blue-90 {
+  color: rgba(1, 112, 227, 0.9);
+  border: 1px solid rgba(1, 112, 227, 0.9);
+  background: transparent;
+}
+
+.border-tran-sea-blue-90 {
+  background-color: rgba(1, 112, 227, 0.9);
+  border: 2px solid rgba(1, 112, 227, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow {
+  box-shadow: 0 0 12px 2px rgb(251, 205, 49);
+}
+
+.border-yellow {
+  color: rgb(251, 205, 49);
+  border: 1px solid rgb(251, 205, 49);
+  background: transparent;
+}
+
+.border-tran-yellow {
+  background-color: rgb(251, 205, 49);
+  border: 2px solid rgb(251, 205, 49);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow-10 {
+  box-shadow: 0 0 12px 2px rgba(251, 205, 49, 0.1);
+}
+
+.border-yellow-10 {
+  color: rgba(251, 205, 49, 0.1);
+  border: 1px solid rgba(251, 205, 49, 0.1);
+  background: transparent;
+}
+
+.border-tran-yellow-10 {
+  background-color: rgba(251, 205, 49, 0.1);
+  border: 2px solid rgba(251, 205, 49, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow-20 {
+  box-shadow: 0 0 12px 2px rgba(251, 205, 49, 0.2);
+}
+
+.border-yellow-20 {
+  color: rgba(251, 205, 49, 0.2);
+  border: 1px solid rgba(251, 205, 49, 0.2);
+  background: transparent;
+}
+
+.border-tran-yellow-20 {
+  background-color: rgba(251, 205, 49, 0.2);
+  border: 2px solid rgba(251, 205, 49, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow-30 {
+  box-shadow: 0 0 12px 2px rgba(251, 205, 49, 0.3);
+}
+
+.border-yellow-30 {
+  color: rgba(251, 205, 49, 0.3);
+  border: 1px solid rgba(251, 205, 49, 0.3);
+  background: transparent;
+}
+
+.border-tran-yellow-30 {
+  background-color: rgba(251, 205, 49, 0.3);
+  border: 2px solid rgba(251, 205, 49, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow-40 {
+  box-shadow: 0 0 12px 2px rgba(251, 205, 49, 0.4);
+}
+
+.border-yellow-40 {
+  color: rgba(251, 205, 49, 0.4);
+  border: 1px solid rgba(251, 205, 49, 0.4);
+  background: transparent;
+}
+
+.border-tran-yellow-40 {
+  background-color: rgba(251, 205, 49, 0.4);
+  border: 2px solid rgba(251, 205, 49, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow-50 {
+  box-shadow: 0 0 12px 2px rgba(251, 205, 49, 0.5);
+}
+
+.border-yellow-50 {
+  color: rgba(251, 205, 49, 0.5);
+  border: 1px solid rgba(251, 205, 49, 0.5);
+  background: transparent;
+}
+
+.border-tran-yellow-50 {
+  background-color: rgba(251, 205, 49, 0.5);
+  border: 2px solid rgba(251, 205, 49, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow-60 {
+  box-shadow: 0 0 12px 2px rgba(251, 205, 49, 0.6);
+}
+
+.border-yellow-60 {
+  color: rgba(251, 205, 49, 0.6);
+  border: 1px solid rgba(251, 205, 49, 0.6);
+  background: transparent;
+}
+
+.border-tran-yellow-60 {
+  background-color: rgba(251, 205, 49, 0.6);
+  border: 2px solid rgba(251, 205, 49, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow-70 {
+  box-shadow: 0 0 12px 2px rgba(251, 205, 49, 0.7);
+}
+
+.border-yellow-70 {
+  color: rgba(251, 205, 49, 0.7);
+  border: 1px solid rgba(251, 205, 49, 0.7);
+  background: transparent;
+}
+
+.border-tran-yellow-70 {
+  background-color: rgba(251, 205, 49, 0.7);
+  border: 2px solid rgba(251, 205, 49, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow-80 {
+  box-shadow: 0 0 12px 2px rgba(251, 205, 49, 0.8);
+}
+
+.border-yellow-80 {
+  color: rgba(251, 205, 49, 0.8);
+  border: 1px solid rgba(251, 205, 49, 0.8);
+  background: transparent;
+}
+
+.border-tran-yellow-80 {
+  background-color: rgba(251, 205, 49, 0.8);
+  border: 2px solid rgba(251, 205, 49, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-yellow-90 {
+  box-shadow: 0 0 12px 2px rgba(251, 205, 49, 0.9);
+}
+
+.border-yellow-90 {
+  color: rgba(251, 205, 49, 0.9);
+  border: 1px solid rgba(251, 205, 49, 0.9);
+  background: transparent;
+}
+
+.border-tran-yellow-90 {
+  background-color: rgba(251, 205, 49, 0.9);
+  border: 2px solid rgba(251, 205, 49, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold {
+  box-shadow: 0 0 12px 2px rgb(252, 195, 7);
+}
+
+.border-gold {
+  color: rgb(252, 195, 7);
+  border: 1px solid rgb(252, 195, 7);
+  background: transparent;
+}
+
+.border-tran-gold {
+  background-color: rgb(252, 195, 7);
+  border: 2px solid rgb(252, 195, 7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold-10 {
+  box-shadow: 0 0 12px 2px rgba(252, 195, 7, 0.1);
+}
+
+.border-gold-10 {
+  color: rgba(252, 195, 7, 0.1);
+  border: 1px solid rgba(252, 195, 7, 0.1);
+  background: transparent;
+}
+
+.border-tran-gold-10 {
+  background-color: rgba(252, 195, 7, 0.1);
+  border: 2px solid rgba(252, 195, 7, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold-20 {
+  box-shadow: 0 0 12px 2px rgba(252, 195, 7, 0.2);
+}
+
+.border-gold-20 {
+  color: rgba(252, 195, 7, 0.2);
+  border: 1px solid rgba(252, 195, 7, 0.2);
+  background: transparent;
+}
+
+.border-tran-gold-20 {
+  background-color: rgba(252, 195, 7, 0.2);
+  border: 2px solid rgba(252, 195, 7, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold-30 {
+  box-shadow: 0 0 12px 2px rgba(252, 195, 7, 0.3);
+}
+
+.border-gold-30 {
+  color: rgba(252, 195, 7, 0.3);
+  border: 1px solid rgba(252, 195, 7, 0.3);
+  background: transparent;
+}
+
+.border-tran-gold-30 {
+  background-color: rgba(252, 195, 7, 0.3);
+  border: 2px solid rgba(252, 195, 7, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold-40 {
+  box-shadow: 0 0 12px 2px rgba(252, 195, 7, 0.4);
+}
+
+.border-gold-40 {
+  color: rgba(252, 195, 7, 0.4);
+  border: 1px solid rgba(252, 195, 7, 0.4);
+  background: transparent;
+}
+
+.border-tran-gold-40 {
+  background-color: rgba(252, 195, 7, 0.4);
+  border: 2px solid rgba(252, 195, 7, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold-50 {
+  box-shadow: 0 0 12px 2px rgba(252, 195, 7, 0.5);
+}
+
+.border-gold-50 {
+  color: rgba(252, 195, 7, 0.5);
+  border: 1px solid rgba(252, 195, 7, 0.5);
+  background: transparent;
+}
+
+.border-tran-gold-50 {
+  background-color: rgba(252, 195, 7, 0.5);
+  border: 2px solid rgba(252, 195, 7, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold-60 {
+  box-shadow: 0 0 12px 2px rgba(252, 195, 7, 0.6);
+}
+
+.border-gold-60 {
+  color: rgba(252, 195, 7, 0.6);
+  border: 1px solid rgba(252, 195, 7, 0.6);
+  background: transparent;
+}
+
+.border-tran-gold-60 {
+  background-color: rgba(252, 195, 7, 0.6);
+  border: 2px solid rgba(252, 195, 7, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold-70 {
+  box-shadow: 0 0 12px 2px rgba(252, 195, 7, 0.7);
+}
+
+.border-gold-70 {
+  color: rgba(252, 195, 7, 0.7);
+  border: 1px solid rgba(252, 195, 7, 0.7);
+  background: transparent;
+}
+
+.border-tran-gold-70 {
+  background-color: rgba(252, 195, 7, 0.7);
+  border: 2px solid rgba(252, 195, 7, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold-80 {
+  box-shadow: 0 0 12px 2px rgba(252, 195, 7, 0.8);
+}
+
+.border-gold-80 {
+  color: rgba(252, 195, 7, 0.8);
+  border: 1px solid rgba(252, 195, 7, 0.8);
+  background: transparent;
+}
+
+.border-tran-gold-80 {
+  background-color: rgba(252, 195, 7, 0.8);
+  border: 2px solid rgba(252, 195, 7, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-gold-90 {
+  box-shadow: 0 0 12px 2px rgba(252, 195, 7, 0.9);
+}
+
+.border-gold-90 {
+  color: rgba(252, 195, 7, 0.9);
+  border: 1px solid rgba(252, 195, 7, 0.9);
+  background: transparent;
+}
+
+.border-tran-gold-90 {
+  background-color: rgba(252, 195, 7, 0.9);
+  border: 2px solid rgba(252, 195, 7, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple {
+  box-shadow: 0 0 12px 2px rgb(126, 22, 113);
+}
+
+.border-purple {
+  color: rgb(126, 22, 113);
+  border: 1px solid rgb(126, 22, 113);
+  background: transparent;
+}
+
+.border-tran-purple {
+  background-color: rgb(126, 22, 113);
+  border: 2px solid rgb(126, 22, 113);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple-10 {
+  box-shadow: 0 0 12px 2px rgba(126, 22, 113, 0.1);
+}
+
+.border-purple-10 {
+  color: rgba(126, 22, 113, 0.1);
+  border: 1px solid rgba(126, 22, 113, 0.1);
+  background: transparent;
+}
+
+.border-tran-purple-10 {
+  background-color: rgba(126, 22, 113, 0.1);
+  border: 2px solid rgba(126, 22, 113, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple-20 {
+  box-shadow: 0 0 12px 2px rgba(126, 22, 113, 0.2);
+}
+
+.border-purple-20 {
+  color: rgba(126, 22, 113, 0.2);
+  border: 1px solid rgba(126, 22, 113, 0.2);
+  background: transparent;
+}
+
+.border-tran-purple-20 {
+  background-color: rgba(126, 22, 113, 0.2);
+  border: 2px solid rgba(126, 22, 113, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple-30 {
+  box-shadow: 0 0 12px 2px rgba(126, 22, 113, 0.3);
+}
+
+.border-purple-30 {
+  color: rgba(126, 22, 113, 0.3);
+  border: 1px solid rgba(126, 22, 113, 0.3);
+  background: transparent;
+}
+
+.border-tran-purple-30 {
+  background-color: rgba(126, 22, 113, 0.3);
+  border: 2px solid rgba(126, 22, 113, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple-40 {
+  box-shadow: 0 0 12px 2px rgba(126, 22, 113, 0.4);
+}
+
+.border-purple-40 {
+  color: rgba(126, 22, 113, 0.4);
+  border: 1px solid rgba(126, 22, 113, 0.4);
+  background: transparent;
+}
+
+.border-tran-purple-40 {
+  background-color: rgba(126, 22, 113, 0.4);
+  border: 2px solid rgba(126, 22, 113, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple-50 {
+  box-shadow: 0 0 12px 2px rgba(126, 22, 113, 0.5);
+}
+
+.border-purple-50 {
+  color: rgba(126, 22, 113, 0.5);
+  border: 1px solid rgba(126, 22, 113, 0.5);
+  background: transparent;
+}
+
+.border-tran-purple-50 {
+  background-color: rgba(126, 22, 113, 0.5);
+  border: 2px solid rgba(126, 22, 113, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple-60 {
+  box-shadow: 0 0 12px 2px rgba(126, 22, 113, 0.6);
+}
+
+.border-purple-60 {
+  color: rgba(126, 22, 113, 0.6);
+  border: 1px solid rgba(126, 22, 113, 0.6);
+  background: transparent;
+}
+
+.border-tran-purple-60 {
+  background-color: rgba(126, 22, 113, 0.6);
+  border: 2px solid rgba(126, 22, 113, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple-70 {
+  box-shadow: 0 0 12px 2px rgba(126, 22, 113, 0.7);
+}
+
+.border-purple-70 {
+  color: rgba(126, 22, 113, 0.7);
+  border: 1px solid rgba(126, 22, 113, 0.7);
+  background: transparent;
+}
+
+.border-tran-purple-70 {
+  background-color: rgba(126, 22, 113, 0.7);
+  border: 2px solid rgba(126, 22, 113, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple-80 {
+  box-shadow: 0 0 12px 2px rgba(126, 22, 113, 0.8);
+}
+
+.border-purple-80 {
+  color: rgba(126, 22, 113, 0.8);
+  border: 1px solid rgba(126, 22, 113, 0.8);
+  background: transparent;
+}
+
+.border-tran-purple-80 {
+  background-color: rgba(126, 22, 113, 0.8);
+  border: 2px solid rgba(126, 22, 113, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-purple-90 {
+  box-shadow: 0 0 12px 2px rgba(126, 22, 113, 0.9);
+}
+
+.border-purple-90 {
+  color: rgba(126, 22, 113, 0.9);
+  border: 1px solid rgba(126, 22, 113, 0.9);
+  background: transparent;
+}
+
+.border-tran-purple-90 {
+  background-color: rgba(126, 22, 113, 0.9);
+  border: 2px solid rgba(126, 22, 113, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac {
+  box-shadow: 0 0 12px 2px rgb(128, 109, 158);
+}
+
+.border-lilac {
+  color: rgb(128, 109, 158);
+  border: 1px solid rgb(128, 109, 158);
+  background: transparent;
+}
+
+.border-tran-lilac {
+  background-color: rgb(128, 109, 158);
+  border: 2px solid rgb(128, 109, 158);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac-10 {
+  box-shadow: 0 0 12px 2px rgba(128, 109, 158, 0.1);
+}
+
+.border-lilac-10 {
+  color: rgba(128, 109, 158, 0.1);
+  border: 1px solid rgba(128, 109, 158, 0.1);
+  background: transparent;
+}
+
+.border-tran-lilac-10 {
+  background-color: rgba(128, 109, 158, 0.1);
+  border: 2px solid rgba(128, 109, 158, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac-20 {
+  box-shadow: 0 0 12px 2px rgba(128, 109, 158, 0.2);
+}
+
+.border-lilac-20 {
+  color: rgba(128, 109, 158, 0.2);
+  border: 1px solid rgba(128, 109, 158, 0.2);
+  background: transparent;
+}
+
+.border-tran-lilac-20 {
+  background-color: rgba(128, 109, 158, 0.2);
+  border: 2px solid rgba(128, 109, 158, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac-30 {
+  box-shadow: 0 0 12px 2px rgba(128, 109, 158, 0.3);
+}
+
+.border-lilac-30 {
+  color: rgba(128, 109, 158, 0.3);
+  border: 1px solid rgba(128, 109, 158, 0.3);
+  background: transparent;
+}
+
+.border-tran-lilac-30 {
+  background-color: rgba(128, 109, 158, 0.3);
+  border: 2px solid rgba(128, 109, 158, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac-40 {
+  box-shadow: 0 0 12px 2px rgba(128, 109, 158, 0.4);
+}
+
+.border-lilac-40 {
+  color: rgba(128, 109, 158, 0.4);
+  border: 1px solid rgba(128, 109, 158, 0.4);
+  background: transparent;
+}
+
+.border-tran-lilac-40 {
+  background-color: rgba(128, 109, 158, 0.4);
+  border: 2px solid rgba(128, 109, 158, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac-50 {
+  box-shadow: 0 0 12px 2px rgba(128, 109, 158, 0.5);
+}
+
+.border-lilac-50 {
+  color: rgba(128, 109, 158, 0.5);
+  border: 1px solid rgba(128, 109, 158, 0.5);
+  background: transparent;
+}
+
+.border-tran-lilac-50 {
+  background-color: rgba(128, 109, 158, 0.5);
+  border: 2px solid rgba(128, 109, 158, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac-60 {
+  box-shadow: 0 0 12px 2px rgba(128, 109, 158, 0.6);
+}
+
+.border-lilac-60 {
+  color: rgba(128, 109, 158, 0.6);
+  border: 1px solid rgba(128, 109, 158, 0.6);
+  background: transparent;
+}
+
+.border-tran-lilac-60 {
+  background-color: rgba(128, 109, 158, 0.6);
+  border: 2px solid rgba(128, 109, 158, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac-70 {
+  box-shadow: 0 0 12px 2px rgba(128, 109, 158, 0.7);
+}
+
+.border-lilac-70 {
+  color: rgba(128, 109, 158, 0.7);
+  border: 1px solid rgba(128, 109, 158, 0.7);
+  background: transparent;
+}
+
+.border-tran-lilac-70 {
+  background-color: rgba(128, 109, 158, 0.7);
+  border: 2px solid rgba(128, 109, 158, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac-80 {
+  box-shadow: 0 0 12px 2px rgba(128, 109, 158, 0.8);
+}
+
+.border-lilac-80 {
+  color: rgba(128, 109, 158, 0.8);
+  border: 1px solid rgba(128, 109, 158, 0.8);
+  background: transparent;
+}
+
+.border-tran-lilac-80 {
+  background-color: rgba(128, 109, 158, 0.8);
+  border: 2px solid rgba(128, 109, 158, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-lilac-90 {
+  box-shadow: 0 0 12px 2px rgba(128, 109, 158, 0.9);
+}
+
+.border-lilac-90 {
+  color: rgba(128, 109, 158, 0.9);
+  border: 1px solid rgba(128, 109, 158, 0.9);
+  background: transparent;
+}
+
+.border-tran-lilac-90 {
+  background-color: rgba(128, 109, 158, 0.9);
+  border: 2px solid rgba(128, 109, 158, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown {
+  box-shadow: 0 0 12px 2px rgb(145, 128, 114);
+}
+
+.border-brown {
+  color: rgb(145, 128, 114);
+  border: 1px solid rgb(145, 128, 114);
+  background: transparent;
+}
+
+.border-tran-brown {
+  background-color: rgb(145, 128, 114);
+  border: 2px solid rgb(145, 128, 114);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown-10 {
+  box-shadow: 0 0 12px 2px rgba(145, 128, 114, 0.1);
+}
+
+.border-brown-10 {
+  color: rgba(145, 128, 114, 0.1);
+  border: 1px solid rgba(145, 128, 114, 0.1);
+  background: transparent;
+}
+
+.border-tran-brown-10 {
+  background-color: rgba(145, 128, 114, 0.1);
+  border: 2px solid rgba(145, 128, 114, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown-20 {
+  box-shadow: 0 0 12px 2px rgba(145, 128, 114, 0.2);
+}
+
+.border-brown-20 {
+  color: rgba(145, 128, 114, 0.2);
+  border: 1px solid rgba(145, 128, 114, 0.2);
+  background: transparent;
+}
+
+.border-tran-brown-20 {
+  background-color: rgba(145, 128, 114, 0.2);
+  border: 2px solid rgba(145, 128, 114, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown-30 {
+  box-shadow: 0 0 12px 2px rgba(145, 128, 114, 0.3);
+}
+
+.border-brown-30 {
+  color: rgba(145, 128, 114, 0.3);
+  border: 1px solid rgba(145, 128, 114, 0.3);
+  background: transparent;
+}
+
+.border-tran-brown-30 {
+  background-color: rgba(145, 128, 114, 0.3);
+  border: 2px solid rgba(145, 128, 114, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown-40 {
+  box-shadow: 0 0 12px 2px rgba(145, 128, 114, 0.4);
+}
+
+.border-brown-40 {
+  color: rgba(145, 128, 114, 0.4);
+  border: 1px solid rgba(145, 128, 114, 0.4);
+  background: transparent;
+}
+
+.border-tran-brown-40 {
+  background-color: rgba(145, 128, 114, 0.4);
+  border: 2px solid rgba(145, 128, 114, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown-50 {
+  box-shadow: 0 0 12px 2px rgba(145, 128, 114, 0.5);
+}
+
+.border-brown-50 {
+  color: rgba(145, 128, 114, 0.5);
+  border: 1px solid rgba(145, 128, 114, 0.5);
+  background: transparent;
+}
+
+.border-tran-brown-50 {
+  background-color: rgba(145, 128, 114, 0.5);
+  border: 2px solid rgba(145, 128, 114, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown-60 {
+  box-shadow: 0 0 12px 2px rgba(145, 128, 114, 0.6);
+}
+
+.border-brown-60 {
+  color: rgba(145, 128, 114, 0.6);
+  border: 1px solid rgba(145, 128, 114, 0.6);
+  background: transparent;
+}
+
+.border-tran-brown-60 {
+  background-color: rgba(145, 128, 114, 0.6);
+  border: 2px solid rgba(145, 128, 114, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown-70 {
+  box-shadow: 0 0 12px 2px rgba(145, 128, 114, 0.7);
+}
+
+.border-brown-70 {
+  color: rgba(145, 128, 114, 0.7);
+  border: 1px solid rgba(145, 128, 114, 0.7);
+  background: transparent;
+}
+
+.border-tran-brown-70 {
+  background-color: rgba(145, 128, 114, 0.7);
+  border: 2px solid rgba(145, 128, 114, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown-80 {
+  box-shadow: 0 0 12px 2px rgba(145, 128, 114, 0.8);
+}
+
+.border-brown-80 {
+  color: rgba(145, 128, 114, 0.8);
+  border: 1px solid rgba(145, 128, 114, 0.8);
+  background: transparent;
+}
+
+.border-tran-brown-80 {
+  background-color: rgba(145, 128, 114, 0.8);
+  border: 2px solid rgba(145, 128, 114, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-brown-90 {
+  box-shadow: 0 0 12px 2px rgba(145, 128, 114, 0.9);
+}
+
+.border-brown-90 {
+  color: rgba(145, 128, 114, 0.9);
+  border: 1px solid rgba(145, 128, 114, 0.9);
+  background: transparent;
+}
+
+.border-tran-brown-90 {
+  background-color: rgba(145, 128, 114, 0.9);
+  border: 2px solid rgba(145, 128, 114, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink {
+  box-shadow: 0 0 12px 2px rgb(232, 122, 144);
+}
+
+.border-pink {
+  color: rgb(232, 122, 144);
+  border: 1px solid rgb(232, 122, 144);
+  background: transparent;
+}
+
+.border-tran-pink {
+  background-color: rgb(232, 122, 144);
+  border: 2px solid rgb(232, 122, 144);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink-10 {
+  box-shadow: 0 0 12px 2px rgba(232, 122, 144, 0.1);
+}
+
+.border-pink-10 {
+  color: rgba(232, 122, 144, 0.1);
+  border: 1px solid rgba(232, 122, 144, 0.1);
+  background: transparent;
+}
+
+.border-tran-pink-10 {
+  background-color: rgba(232, 122, 144, 0.1);
+  border: 2px solid rgba(232, 122, 144, 0.1);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink-20 {
+  box-shadow: 0 0 12px 2px rgba(232, 122, 144, 0.2);
+}
+
+.border-pink-20 {
+  color: rgba(232, 122, 144, 0.2);
+  border: 1px solid rgba(232, 122, 144, 0.2);
+  background: transparent;
+}
+
+.border-tran-pink-20 {
+  background-color: rgba(232, 122, 144, 0.2);
+  border: 2px solid rgba(232, 122, 144, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink-30 {
+  box-shadow: 0 0 12px 2px rgba(232, 122, 144, 0.3);
+}
+
+.border-pink-30 {
+  color: rgba(232, 122, 144, 0.3);
+  border: 1px solid rgba(232, 122, 144, 0.3);
+  background: transparent;
+}
+
+.border-tran-pink-30 {
+  background-color: rgba(232, 122, 144, 0.3);
+  border: 2px solid rgba(232, 122, 144, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink-40 {
+  box-shadow: 0 0 12px 2px rgba(232, 122, 144, 0.4);
+}
+
+.border-pink-40 {
+  color: rgba(232, 122, 144, 0.4);
+  border: 1px solid rgba(232, 122, 144, 0.4);
+  background: transparent;
+}
+
+.border-tran-pink-40 {
+  background-color: rgba(232, 122, 144, 0.4);
+  border: 2px solid rgba(232, 122, 144, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink-50 {
+  box-shadow: 0 0 12px 2px rgba(232, 122, 144, 0.5);
+}
+
+.border-pink-50 {
+  color: rgba(232, 122, 144, 0.5);
+  border: 1px solid rgba(232, 122, 144, 0.5);
+  background: transparent;
+}
+
+.border-tran-pink-50 {
+  background-color: rgba(232, 122, 144, 0.5);
+  border: 2px solid rgba(232, 122, 144, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink-60 {
+  box-shadow: 0 0 12px 2px rgba(232, 122, 144, 0.6);
+}
+
+.border-pink-60 {
+  color: rgba(232, 122, 144, 0.6);
+  border: 1px solid rgba(232, 122, 144, 0.6);
+  background: transparent;
+}
+
+.border-tran-pink-60 {
+  background-color: rgba(232, 122, 144, 0.6);
+  border: 2px solid rgba(232, 122, 144, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink-70 {
+  box-shadow: 0 0 12px 2px rgba(232, 122, 144, 0.7);
+}
+
+.border-pink-70 {
+  color: rgba(232, 122, 144, 0.7);
+  border: 1px solid rgba(232, 122, 144, 0.7);
+  background: transparent;
+}
+
+.border-tran-pink-70 {
+  background-color: rgba(232, 122, 144, 0.7);
+  border: 2px solid rgba(232, 122, 144, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink-80 {
+  box-shadow: 0 0 12px 2px rgba(232, 122, 144, 0.8);
+}
+
+.border-pink-80 {
+  color: rgba(232, 122, 144, 0.8);
+  border: 1px solid rgba(232, 122, 144, 0.8);
+  background: transparent;
+}
+
+.border-tran-pink-80 {
+  background-color: rgba(232, 122, 144, 0.8);
+  border: 2px solid rgba(232, 122, 144, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.shadow-pink-90 {
+  box-shadow: 0 0 12px 2px rgba(232, 122, 144, 0.9);
+}
+
+.border-pink-90 {
+  color: rgba(232, 122, 144, 0.9);
+  border: 1px solid rgba(232, 122, 144, 0.9);
+  background: transparent;
+}
+
+.border-tran-pink-90 {
+  background-color: rgba(232, 122, 144, 0.9);
+  border: 2px solid rgba(232, 122, 144, 0.9);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.float-up {
+  transition: transform 0.3s ease;
+}
+.float-up:hover {
+  transform: translateY(-5px);
+}
+
+.float-down {
+  transition: transform 0.3s ease;
+}
+.float-down:hover {
+  transform: translateY(5px);
+}
+
+.sm-fat {
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+
+.tag {
+  font-size: 0.85em;
+  border-radius: 50px;
+  padding: 5px 13px;
+}
+
+/*# sourceMappingURL=basic.css.map */

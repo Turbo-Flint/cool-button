@@ -4,9 +4,20 @@
   "description": "A css style of button.",
   "main": "style.sass",
   "scripts": {
-    "build": "sass style.sass out.css && node js/run.js",
-    "watch": "sass --watch style.sass out.css",
-    "compress": "cleancss -o out.mim.css out.css"
+    "build": "node js/error.js && exit 1",
+    "build:main": "sass sass/main.sass css/main.css && node js/run.js",
+    "build:hover": "sass sass/hover.sass css/hover.css && node js/run.js",
+    "build:basic": "sass sass/basic.sass css/basic.css && node js/run.js",
+    "watch": "node js/error.js && exit 1",
+    "watch:main": "sass --watch sass/main.sass css/main.css && node js/run.js",
+    "watch:hover": "sass --watch sass/hover.sass css/hover.css && node js/run.js",
+    "watch:basic": "sass --watch sass/basic.sass css/basic.css && node js/run.js",
+    "compress": "node js/error.js && exit 1",
+    "compress:main": "cleancss -o css/main.min.css css/main.css",
+    "compress:hover": "cleancss -o css/hover.min.css css/hover.css",
+    "compress:basic": "cleancss -o css/basic.min.css css/basic.css",
+    "build:all": "node js/build_all.js",
+    "compress:all": "node js/compress_all.js"
   },
   "repository": {
     "type": "git",
