@@ -1,0 +1,178 @@
+/* v2.0 重构版 2025/6/10 */
+// 修正颜色值，RGB 范围是 0-255e "sas"s:color" w"t
+@use "variables"
+@use "sass:color"
+
+
+.c-btn
+    outline: none
+    border: none
+    padding: 10px 40px
+    font-size: 15px
+    text-align: center
+    @media (prefers-color-scheme: light)
+        background: variables.$background
+        color: white
+    @media (prefers-color-scheme: dark)
+        background: white
+
+.text-white
+    color: white !important
+.btn-bold
+    font-weight: bold
+.border-bold
+    border-width: 10px
+.square
+    border-radius: 0px
+.radius
+    border-radius: 50px
+.circle
+    padding: 6px 15px
+    border-radius: 100px
+    font-size: 20px
+    text-align: center
+.less-padding
+    padding: 10px
+.no-padding
+    padding: 0px
+.flat
+    padding: 3px 30px
+    text-align: center
+.padding
+    padding: 10px 40px
+.icon
+    padding: 10px 12px 8px 12px
+
+.sm
+    padding: 6px 30px
+    font-size: 14px
+.md
+    padding: 10px 35px
+    font-size: 18px
+.lg
+    padding: 14px 40px
+    font-size: 22px
+.block
+    padding: 12px 80px
+.full-block
+    width: 100%
+    padding: 12px 0
+.glass
+    background: rgba(255, 255, 255, 0.15)
+    backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(10px)
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    box-shadow: 0 8px 32px rgba(250, 250, 250, 0.2)
+    transition: all 0.3s ease
+    cursor: pointer
+    text-decoration: none
+    color: white
+.hover-glass
+    background: rgba(255, 255, 255, 0.15)
+    backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(10px)
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    box-shadow: 0 8px 32px rgba(250, 250, 250, 0.2)
+    transition: all 0.25s ease
+    cursor: pointer
+    text-decoration: none
+    color: white
+    &:hover
+        background: rgba(255, 255, 255, 0.15)
+        transform: scale(1.05)
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25)
+    &:active
+        transform: scale(0.96)
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2)
+.active
+    transition: transform 0.3s ease
+    &:active
+        transform: scale(0.94)
+.mouse-hover
+    transition: transform 0.3s ease
+    &:hover
+        transform: scale(1.05)
+.active-with-hover
+    transition: transform 0.3s ease
+    &:hover
+        transform: scale(1.05)
+    &:active
+        transform: scale(0.95)
+
+$color-map: (
+        red: variables.$red,
+        orange: variables.$orange,
+        tangerine: variables.$tangerine,
+        green: variables.$green,
+        emerald: variables.$emerald,
+        mint: variables.$mint,
+        blue: variables.$blue,
+        ocean-blue: variables.$ocean-blue,
+        deep-blue: variables.$deep-blue,
+        sea-blue: variables.$sea-blue,
+        yellow: variables.$yellow,
+        gold: variables.$gold,
+        purple: variables.$purple,
+        lilac: variables.$lilac,
+        brown: variables.$brown,
+        pink: variables.$pink,
+)
+
+
+@each $color-name, $color in $color-map
+    .#{"" + $color-name}
+        background: $color
+        color: if($color-name == 'yellow', black, white)
+
+@each $color-name, $color in $color-map
+    .shadow-#{"" + $color-name}
+        box-shadow: 0 0 12px 2px $color
+
+    .border-#{"" + $color-name}
+        color: $color
+        border: 1px solid $color
+        background: transparent
+
+    .border-tran-#{"" + $color-name}
+        background-color: $color
+        border: 2px solid $color
+        color: rgb(255, 255, 255)
+        font-size: 16px
+
+.float-down
+    transition: transform 0.3s ease
+    &:hover
+        transform: translateY(5px)
+
+.sm-fat
+    border-radius: 50px
+    padding: 10px 15px
+
+.tag
+    font-size: 0.85em
+    border-radius: 50px
+    padding: 5px 13px
+
+@each $color-name, $color in $color-map          
+    .hover-border-tran-#{"" + $color-name}
+        background-color: transparent
+        border: 2px solid $color
+        color: $color
+        cursor: pointer
+        font-size: 16px
+        outline: 0
+        text-decoration: none
+        transition: all .3s
+        touch-action: manipulation
+
+        &:hover
+            background-color: rgba(color.channel($color, "red"), color.channel($color, "green"), color.channel($color, "blue"), 0.1)
+            border-color: $color
+            color: $color
+            fill: $color
+
+        &:active
+            background-color: rgba(color.channel($color, "red"), color.channel($color, "green"), color.channel($color, "blue"), 0.2)
+            border-color: $color
+            color: $color
+            fill: $color
