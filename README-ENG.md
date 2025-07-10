@@ -1,9 +1,12 @@
 # Cool Button
-[Chinese](README.md)
+[中文](README.md)
+
 Cool Button is a CSS button style that can be quickly called and used, offering a wide range of customizable options. Additionally, Cool Button provides auxiliary commands for Sass building, allowing you to rebuild files using Sass.
 
 [Cool Button Online Preview](https://dev.turboflint.cn/cool-button/view)
+
 [Cool Button Website](https://dev.turboflint.cn/cool-button)
+
 [Cool Button Documentation](https://dev.turboflint.cn/docs/cool-button)
 
 # Why Choose Cool Button?
